@@ -1,0 +1,1593 @@
+@relation 2011_Detail_Commodity-weka.filters.unsupervised.attribute.ReplaceMissingValues
+
+@attribute 'Commodity Code' {1111A0,1111B0,111200,111300,111400,111900,112120,1121A0,112300,112A00,113000,114000,115000,211000,212100,212230,2122A0,212310,2123A0,213111,21311A,221100,221200,221300,230301,230302,233210,233230,233240,233262,2332A0,2332C0,2332D0,233411,233412,2334A0,311111,311119,311210,311221,311224,311225,311230,311300,311410,311420,311513,311514,31151A,311520,311615,31161A,311700,311810,3118A0,311910,311920,311930,311940,311990,312110,312120,312130,312140,312200,313100,313200,313300,314110,314120,314900,315000,316000,321100,321200,321910,3219A0,322110,322120,322130,322210,322220,322230,322291,322299,323110,323120,324110,324121,324122,324190,325110,325120,325130,325180,325190,325211,3252A0,325310,325320,325411,325412,325413,325414,325510,325520,325610,325620,325910,3259A0,326110,326120,326130,326140,326150,326160,326190,326210,326220,326290,327100,327200,327310,327320,327330,327390,327400,327910,327991,327992,327993,327999,331110,331200,331313,33131B,331410,331420,331490,331510,331520,332114,332119,33211A,332200,332310,332320,332410,332420,332430,332500,332600,332710,332720,332800,332913,33291A,332991,332996,332999,33299A,333111,333112,333120,333130,333242,33329A,333314,333316,333318,333413,333414,333415,333511,333514,333517,33351B,333611,333612,333613,333618,333912,33391A,333920,333991,333993,333994,33399A,33399B,334111,334112,334118,334210,334220,334290,334300,334413,334418,33441A,334510,334511,334512,334513,334514,334515,334516,334517,33451A,334610,335110,335120,335210,335221,335222,335224,335228,335311,335312,335313,335314,335911,335912,335920,335930,335991,335999,336111,336112,336120,336211,336212,336213,336214,336310,336320,336350,336360,336370,336390,3363A0,336411,336412,336413,336414,33641A,336500,336611,336612,336991,336992,336999,337110,337121,337122,337127,33712N,337215,33721A,337900,339112,339113,339114,339115,339116,339910,339920,339930,339940,339950,339990,4200ID,423100,423400,423600,423800,423A00,424200,424400,424700,424A00,425000,441000,444000,445000,446000,447000,448000,452000,454000,481000,482000,483000,484000,485000,486000,48A000,491000,492000,493000,4B0000,511110,511120,511130,5111A0,511200,512100,512200,515100,515200,517110,517210,517A00,518200,519130,5191A0,522A00,523900,523A00,524113,5241XX,524200,525000,52A000,531HSO,531HST,531ORE,532100,532400,532A00,533000,541100,541200,541300,541400,541511,541512,54151A,541610,5416A0,541700,541800,541920,541940,5419A0,550000,561100,561200,561300,561400,561500,561600,561700,561900,562000,611100,611A00,611B00,621100,621200,621300,621400,621500,621600,621900,622000,623A00,623B00,624100,624400,624A00,711100,711200,711500,711A00,712000,713100,713200,713900,721000,722110,722211,722A00,811100,811200,811300,811400,812100,812200,812300,812900,813100,813A00,813B00,814000}
+@attribute 'Commodity Name' {'Fresh soybeans, canola, flaxseeds, and other oilseeds','Fresh wheat, corn, rice, and other grains','Fresh vegetables, melons, and potatoes','Fresh fruits and tree nuts','Greenhouse crops, mushrooms, nurseries, and flowers','Tobacco, cotton, sugarcane, peanuts, sugar beets, herbs and spices, and other crops',Dairies,'Cattle ranches and feedlots','Poultry farms','Animal farms and aquaculture ponds (except cattle and poultry)','Timber and raw forest products','Wild-caught fish and game','Agriculture and forestry support','Unrefined oil and gas',Coal,'Copper, nickel, lead, and zinc','Iron, gold, silver, and other metal ores','Dimensional stone','Sand, gravel, clay, phosphate, other nonmetallic minerals','Well drilling','Other support activities for mining',Electricity,'Natural gas','Drinking water and wastewater treatment','Nonresidential maintenance and repair','Residential maintenance and repair','Health care structures','Manufacturing structures','Power and communication structures','Educational and vocational structures','Commercial structures, including farm structures','Transportation structures and highways and streets','Other nonresidential structures','Single-family residential structures','Multifamily residential structures','Other residential structures','Dog and cat food','Other animal food','Flours and malts','Corn products','Soybean and other oilseed processing','Refined vegetable, olive, and seed oils','Breakfast cereals','Sugar, candy, and chocolate','Frozen food','Fruit and vegetable preservation',Cheese,'Dry, condensed, and evaporated dairy','Fluid milk and butter','Ice cream and frozen desserts','Packaged poultry','Packaged meat (except poultry)',Seafood,'Bread and other baked goods','Cookies, crackers, pastas, and tortillas','Snack foods','Coffee and tea','Flavored drink concentrates','Seasonings and dressings','All other foods','Soft drinks, bottled water, and ice','Breweries and beer','Wineries and wine','Distilleries and spirits','Tobacco products','Fiber, yarn, and thread',Fabric,'Finished and coated fabric','Carpets and rugs','Curtains and linens','Other textiles',Clothing,Leather,'Lumber and treated lumber','Plywood and veneer','Wooden windows, door, and flooring','Veneer, plywood, and engineered wood','Wood pulp',Paper,Cardboard,'Cardboard containers','Paper bags and coated paper',Stationery,'Sanitary paper (tissues, napkins, diapers, etc.)','All other converted paper products','Books, newspapers, magazines, and other print media','Printing support','Gasoline, fuels, and by-products of petroleum refining','Asphalt pavement','Asphalt shingles','Other petroleum and coal products',Petrochemicals,'Compressed Gases','Synthetic dyes and pigments','Other basic inorganic chemicals','Other basic organic chemicals',Plastics,'Synthetic rubber and artificial and synthetic fibers',Fertilizers,Pesticides,'Medicinal and botanical ingredients','Pharmaceutical products (pills, powders, solutions, etc.)','Blood sugar, pregnancy, and other diagnostic test kits','Vaccines and other biological medical products','Paints and coatings',Adhesives,'Soap and cleaning compounds',Toiletries,'Ink and ink cartridges','Chemicals (except basic chemicals, agrichemicals, polymers, paints, pharmaceuticals,soaps, cleaning compounds)','Plastic bags, films, and sheets','Plastic pipe, fittings, and sausage casings','Laminated plastic plates and shapes','Polystyrene foam products','Urethane and other foam products','Plastic bottles','Other plastic products','Rubber tires','Rubber and plastic belts and hoses','Other rubber products','Clay and ceramic products','Glass and glass products',Cement,'Ready-mix concrete','Concrete pipe, bricks, and blocks','Other concrete products','Lime and gypsum products','Abrasive products','Cut stone and stone products','Ground or treated minerals and earth','Mineral wool','Other nonmetallic mineral products','Primary iron, steel, and ferroalloy products','Secondary steel products','Alumina refining and primary aluminum production','Aluminum products','Nonferrous Metal (except Aluminum) Smelting and Refining','Secondary copper products','Other secondary nonferrous metal products','Cast iron and steel','Nonferrous metal casts','Custom metal rolls','Metal crown, closure, and other metal stamping (except automotive)','All other forging, stamping, and sintering','Cutlery and handtools','Metal structural products','Metal windows, doors, and architectural products','Power boilers and heat exchangers','Heavy gauge metal tanks','Light gauge metal cans, boxes, and containers','Metal hinges, keys, lock, and other hardware','Springs and wires','Machine shops','Screws, nuts, and bolts','Metal coatings, engravings, and heat treatments','Metal plumbing drains, faucets, valves, and other fittings','Valve and fittings (except for plumbing)','Ball and roller bearings','Fabricated pipe and pipe fittings','Other fabricated metal manufacturing','Ammunition, arms, ordnance, and related accessories','Farm machinery and equipment','Lawn and garden equipment','Construction machinery','Mining and oil/gas field machinery','Semiconductor machinery','Machinery for the paper, textile, food or other industries (except semiconductor machinery)','Optical instruments and lenses','Photography and photocopying equipment','Other commercial and service industry machinery','Industrial and commercial fan and blower and air purification equipment','Heating equipment other than warm air furnaces','Air conditioning, refrigeration, and warm air heating equipment','Industrial molds','Special tools, dies, jigs, and fixtures','Machine tool manufacturing','Cutting and machine tool accessory, rolling mill, and other metalworking machines','Turbines and turbine generator sets','Speed changers, industrial high-speed drives, and gears','Mechanical power transmission equipment','Other engine equipment','Air and gas compressors','Pumps and pumping equipment','Material handling equipment','Power tools','Packaging machinery','Industrial process furnaces and ovens','Welding and Soldering Equipment, Scales and Balances, and other general purpose machinery','Hydraulic pumps, motors, cylinders and actuators',Computers,'Computer storage device readers','Computer terminals and other computer peripheral equipment',Telephones,'Wireless communications','Communications equipment','Audio and video equipment',Semiconductors,'Printed circuit and electronic assembly','Electronic capacitors, resistors, coils, transformers, connectors and other components (except  semiconductors and printed circuit assemblies)','Electromedical appartuses','Navigation instruments','Automatic controls for HVAC and refrigeration equipment','Industrial process variable instruments','Fluid meters and counting devices','Signal testing instruments','Analytical laboratory instruments','Irradiation apparatuses','Watches, clocks, and other measuring and controlling devices','External hard drives, CDs, other storage media','Light bulbs','Light fixtures','Small electrical appliances','Home cooking appliances','Home refrigerators and freezers','Home laundry machines','Major home appliances (except ovens, stoves, refrigerators and laundry machines)','Specialty transformers','Motors and generators','Switchgear and switchboards','Relay and industrial controls','Storage batteries','Primary batteries','Communication and energy wire and cable','Wiring devices','Carbon and graphite products','other miscellaneous electrical equipment and components',Automobiles,'Pickup trucks, vans, and SUVs','Heavy duty trucks','Vehicle bodies','Truck trailers','Motor homes','Travel trailer and campers','Vehicle engines and engine parts','Vehicle electrical and electronic equipment','Transmission and power train parts','Vehicle seating and interior trim (upholstery)','Vehicle metal stamping','Other vehicle parts','Motor vehicle steering, suspension components (except spring), and brake systems',Aircraft,'Aircraft engines and parts','Other aircraft parts','Guided missiles and space vehicles','Propulsion units and parts for space vehicles and guided missiles','Railroad rolling stock','Ships and ship repair',Boats,'Motorcycle, bicycle, and parts','Military armored vehicles and tanks','Other transportation equipment','Wood kitchen cabinets and countertops','Home furniture - upholstered','Home furniture - wood, nonupholstered','Institutional furniture','Other household nonupholstered furniture','Shelving and lockers','Office furniture and custom architectural woodwork and millwork','Mattresses, blinds and shades','Surgical and medical instruments','Surgical appliance and supplies','Dental equipment and supplies','Ophthalmic goods','Dental laboratories','Jewelry and silverware','Sporting and athletic goods','Dolls, toys, and games','Office supplies (not paper)',Signs,'Gaskets, seals, musical instruments, fasteners, brooms, brushes, mop and other misc. goods','Customs duties','Motor vehicle and motor vehicle parts and supplies','Professional and commercial equipment and supplies','Household appliances and electrical and electronic goods','Machinery, equipment, and supplies','Other durable goods merchant wholesalers','Drugs and druggists’ sundries','Grocery and related product wholesalers','Petroleum and petroleum products','Other nondurable goods merchant wholesalers','Wholesale electronic markets and agents and brokers','Vehicles and parts sales','Building material and garden equipment and supplies dealers','Food and beverage stores','Health and personal care stores','Gasoline stations','Clothing and clothing accessories stores','General merchandise stores','Nonstore retailers','Air transport','Rail transport','Water transport (boats, ships, ferries)','Truck transport','Passenger ground transport','Pipeline transport','Scenic and sightseeing transportation and support activities for transportation','Postal service','Couriers and messengers',Warehousing,'All other retail',Newspapers,'Magazines and journals',Books,'Directory, mailing list, and other publishers',Software,'Movies and film','Sound recording','Radio and television','Cable and subscription programming',Telecommunications,'Wireless telecommunications','Satellite, telecommunications resellers, and all other telecommunications','Data processing and hosting','Internet publishing and broadcasting','News syndicates, libraries, archives, Internet publishing and all other information services','Nondepository credit intermediation and related activities','Investment advice, portfolio management, and other financial advising services','Securities and commodities brokerage and exchanges','Direct life insurance carriers','Insurance carriers, except direct life','Insurance agencies and brokerages','Funds, trusts, and financial vehicles','Monetary authorities and depository credit intermediation','Owner-occupied housing','Tenant-occupied housing','Other real estate','Vehicle rental and leasing','Commercial equipment rental','Consumer goods and general rental centers','Lessors of nonfinancial intangible assets','Legal services','Accounting, tax preparation, bookkeeping, and payroll','Architectural, engineering, and related services','Specialized design','Custom computer programming','Computer systems design','Other computer related services, including facilities management','Management consulting','Environmental and other technical consulting services','Scientific research and development','Advertising and public relations',Photographers,Veterinarians,'Marketing research and all other miscellaneous professional, scientific, and technical services','Company and enterprise management','Office administration','Facilities support','Employment services','Business support','Travel arrangement and reservation','Investigation and security','Buildings and dwellings services','Other support services','Waste management and remediation','Elementary and secondary schools','Colleges, universities, junior colleges, and professional schools','Other educational services',Physicians,Dentists,'Healthcare practitioners (except physicians and dentists)','Outpatient healthcare','Medical laboratories','Home healthcare',Ambulances,Hospitals,'Nursing and community care facilities','Residential mental retardation, mental health, substance abuse and other facilities','Individual and family services','Child day care','Community food, housing, and other relief services, including rehabilitation services',Performances,Sports,'Independent artists, writers, and performers','Promoters and agents','Museums, historical sites, zoos, and parks','Amusement parks and arcades','Gambling establishments (except casino hotels)','Golf courses, marinas, ski resorts, fitness and other rec centers and industries','Hotels and campgrounds','Full-service restaurants','Limited-service restaurants','All other food and drinking places','Vehicle repair','Electronic  equipment repair and maintenance','Commercial machinery repair','Household goods repair','Salons and barber shops','Funerary services','Dry-cleaning and laundry','Pet care, photofinishing, parking and other sundry services','Religious organizations','Grantmaking, giving, and social advocacy organizations','Civic, social, professional, and similar organizations','Household employees'}
+@attribute Substance {'carbon dioxide',methane,'nitrous oxide','other GHGs'}
+@attribute Unit {'kg/2018 USD, purchaser price','kg CO2e/2018 USD, purchaser price'}
+@attribute 'Supply Chain Emission Factors without Margins' numeric
+@attribute 'Margins of Supply Chain Emission Factors' numeric
+@attribute 'Supply Chain Emission Factors with Margins' numeric
+@attribute 'Unnamed: 7' string
+@attribute 'DQ ReliabilityScore of Factors without Margins' numeric
+@attribute 'DQ TemporalCorrelation of Factors without Margins' numeric
+@attribute 'DQ GeographicalCorrelation of Factors without Margins' numeric
+@attribute 'DQ TechnologicalCorrelation of Factors without Margins' numeric
+@attribute 'DQ DataCollection of Factors without Margins' numeric
+
+@data
+1111A0,'Fresh soybeans, canola, flaxseeds, and other oilseeds','carbon dioxide','kg/2018 USD, purchaser price',0.426,0.07,0.496,?,4,3,1,4,1
+1111A0,'Fresh soybeans, canola, flaxseeds, and other oilseeds',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+1111A0,'Fresh soybeans, canola, flaxseeds, and other oilseeds','nitrous oxide','kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,4,1
+1111A0,'Fresh soybeans, canola, flaxseeds, and other oilseeds','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+1111B0,'Fresh wheat, corn, rice, and other grains','carbon dioxide','kg/2018 USD, purchaser price',0.714,0.078,0.791,?,4,3,1,4,1
+1111B0,'Fresh wheat, corn, rice, and other grains',methane,'kg/2018 USD, purchaser price',0.007,0.001,0.008,?,2,3,1,1,1
+1111B0,'Fresh wheat, corn, rice, and other grains','nitrous oxide','kg/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,4,1
+1111B0,'Fresh wheat, corn, rice, and other grains','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+111200,'Fresh vegetables, melons, and potatoes','carbon dioxide','kg/2018 USD, purchaser price',0.185,0.129,0.314,?,3,3,1,4,1
+111200,'Fresh vegetables, melons, and potatoes',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+111200,'Fresh vegetables, melons, and potatoes','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+111200,'Fresh vegetables, melons, and potatoes','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+111300,'Fresh fruits and tree nuts','carbon dioxide','kg/2018 USD, purchaser price',0.178,0.118,0.296,?,3,3,1,4,1
+111300,'Fresh fruits and tree nuts',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+111300,'Fresh fruits and tree nuts','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+111300,'Fresh fruits and tree nuts','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+111400,'Greenhouse crops, mushrooms, nurseries, and flowers','carbon dioxide','kg/2018 USD, purchaser price',0.323,0.095,0.418,?,4,3,1,4,1
+111400,'Greenhouse crops, mushrooms, nurseries, and flowers',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,4,3,1,1,1
+111400,'Greenhouse crops, mushrooms, nurseries, and flowers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+111400,'Greenhouse crops, mushrooms, nurseries, and flowers','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+111900,'Tobacco, cotton, sugarcane, peanuts, sugar beets, herbs and spices, and other crops','carbon dioxide','kg/2018 USD, purchaser price',0.307,0.072,0.379,?,3,3,1,4,1
+111900,'Tobacco, cotton, sugarcane, peanuts, sugar beets, herbs and spices, and other crops',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+111900,'Tobacco, cotton, sugarcane, peanuts, sugar beets, herbs and spices, and other crops','nitrous oxide','kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,4,1
+111900,'Tobacco, cotton, sugarcane, peanuts, sugar beets, herbs and spices, and other crops','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+112120,Dairies,'carbon dioxide','kg/2018 USD, purchaser price',0.489,0.055,0.544,?,3,3,1,4,1
+112120,Dairies,methane,'kg/2018 USD, purchaser price',0.069,0.001,0.07,?,3,3,1,1,1
+112120,Dairies,'nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,3,1
+112120,Dairies,'other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+1121A0,'Cattle ranches and feedlots','carbon dioxide','kg/2018 USD, purchaser price',0.555,0.055,0.61,?,4,3,1,4,1
+1121A0,'Cattle ranches and feedlots',methane,'kg/2018 USD, purchaser price',0.081,0.001,0.082,?,4,3,1,1,1
+1121A0,'Cattle ranches and feedlots','nitrous oxide','kg/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,4,1
+1121A0,'Cattle ranches and feedlots','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+112300,'Poultry farms','carbon dioxide','kg/2018 USD, purchaser price',0.719,0.062,0.78,?,4,3,1,4,1
+112300,'Poultry farms',methane,'kg/2018 USD, purchaser price',0.007,0.001,0.008,?,3,3,1,1,1
+112300,'Poultry farms','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+112300,'Poultry farms','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+112A00,'Animal farms and aquaculture ponds (except cattle and poultry)','carbon dioxide','kg/2018 USD, purchaser price',0.197,0.07,0.268,?,4,3,1,4,1
+112A00,'Animal farms and aquaculture ponds (except cattle and poultry)',methane,'kg/2018 USD, purchaser price',0.035,0.001,0.035,?,2,3,1,1,1
+112A00,'Animal farms and aquaculture ponds (except cattle and poultry)','nitrous oxide','kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,4,1
+112A00,'Animal farms and aquaculture ponds (except cattle and poultry)','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+113000,'Timber and raw forest products','carbon dioxide','kg/2018 USD, purchaser price',0.2,0.074,0.273,?,4,3,1,4,1
+113000,'Timber and raw forest products',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,3,3,1,1,1
+113000,'Timber and raw forest products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+113000,'Timber and raw forest products','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+114000,'Wild-caught fish and game','carbon dioxide','kg/2018 USD, purchaser price',0.213,0.107,0.32,?,4,3,1,4,1
+114000,'Wild-caught fish and game',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+114000,'Wild-caught fish and game','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+114000,'Wild-caught fish and game','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+115000,'Agriculture and forestry support','carbon dioxide','kg/2018 USD, purchaser price',0.322,0,0.322,?,3,3,1,3,1
+115000,'Agriculture and forestry support',methane,'kg/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,1,1
+115000,'Agriculture and forestry support','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,2,1
+115000,'Agriculture and forestry support','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+211000,'Unrefined oil and gas','carbon dioxide','kg/2018 USD, purchaser price',0.364,0.08,0.443,?,4,3,1,3,1
+211000,'Unrefined oil and gas',methane,'kg/2018 USD, purchaser price',0.018,0.001,0.019,?,4,3,1,1,1
+211000,'Unrefined oil and gas','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,2,1
+211000,'Unrefined oil and gas','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,2,3,1,2,1
+212100,Coal,'carbon dioxide','kg/2018 USD, purchaser price',0.359,0.189,0.548,?,3,3,1,4,1
+212100,Coal,methane,'kg/2018 USD, purchaser price',0.037,0.002,0.039,?,4,3,1,1,1
+212100,Coal,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+212100,Coal,'other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+212230,'Copper, nickel, lead, and zinc','carbon dioxide','kg/2018 USD, purchaser price',1.312,0.076,1.387,?,4,3,1,4,1
+212230,'Copper, nickel, lead, and zinc',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+212230,'Copper, nickel, lead, and zinc','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+212230,'Copper, nickel, lead, and zinc','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,2,3,1,2,1
+2122A0,'Iron, gold, silver, and other metal ores','carbon dioxide','kg/2018 USD, purchaser price',0.969,0.069,1.038,?,3,3,1,3,1
+2122A0,'Iron, gold, silver, and other metal ores',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+2122A0,'Iron, gold, silver, and other metal ores','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+2122A0,'Iron, gold, silver, and other metal ores','other GHGs','kg CO2e/2018 USD, purchaser price',0.014,0,0.014,?,2,3,1,1,1
+212310,'Dimensional stone','carbon dioxide','kg/2018 USD, purchaser price',0.401,0.124,0.525,?,3,3,1,4,1
+212310,'Dimensional stone',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+212310,'Dimensional stone','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+212310,'Dimensional stone','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+2123A0,'Sand, gravel, clay, phosphate, other nonmetallic minerals','carbon dioxide','kg/2018 USD, purchaser price',0.584,0.166,0.75,?,4,3,1,4,1
+2123A0,'Sand, gravel, clay, phosphate, other nonmetallic minerals',methane,'kg/2018 USD, purchaser price',0.003,0.002,0.005,?,4,3,1,1,1
+2123A0,'Sand, gravel, clay, phosphate, other nonmetallic minerals','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+2123A0,'Sand, gravel, clay, phosphate, other nonmetallic minerals','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+213111,'Well drilling','carbon dioxide','kg/2018 USD, purchaser price',0.339,0,0.339,?,3,3,1,4,1
+213111,'Well drilling',methane,'kg/2018 USD, purchaser price',0.01,0,0.01,?,4,3,1,1,1
+213111,'Well drilling','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+213111,'Well drilling','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+21311A,'Other support activities for mining','carbon dioxide','kg/2018 USD, purchaser price',0.386,0,0.386,?,4,3,1,4,1
+21311A,'Other support activities for mining',methane,'kg/2018 USD, purchaser price',0.008,0,0.008,?,4,3,1,1,1
+21311A,'Other support activities for mining','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+21311A,'Other support activities for mining','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+221100,Electricity,'carbon dioxide','kg/2018 USD, purchaser price',4.433,0,4.433,?,2,3,1,2,1
+221100,Electricity,methane,'kg/2018 USD, purchaser price',0.006,0,0.006,?,4,3,1,1,1
+221100,Electricity,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,2,3,1,2,1
+221100,Electricity,'other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,2,3,1,1,1
+221200,'Natural gas','carbon dioxide','kg/2018 USD, purchaser price',0.654,0,0.654,?,3,3,1,2,1
+221200,'Natural gas',methane,'kg/2018 USD, purchaser price',0.01,0,0.01,?,4,3,1,1,1
+221200,'Natural gas','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+221200,'Natural gas','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+221300,'Drinking water and wastewater treatment','carbon dioxide','kg/2018 USD, purchaser price',0.418,0,0.418,?,3,3,1,3,1
+221300,'Drinking water and wastewater treatment',methane,'kg/2018 USD, purchaser price',0.009,0,0.009,?,4,3,1,1,1
+221300,'Drinking water and wastewater treatment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+221300,'Drinking water and wastewater treatment','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,4,1
+230301,'Nonresidential maintenance and repair','carbon dioxide','kg/2018 USD, purchaser price',0.445,0,0.445,?,3,3,1,4,1
+230301,'Nonresidential maintenance and repair',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+230301,'Nonresidential maintenance and repair','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+230301,'Nonresidential maintenance and repair','other GHGs','kg CO2e/2018 USD, purchaser price',0.029,0,0.029,?,4,3,1,5,1
+230302,'Residential maintenance and repair','carbon dioxide','kg/2018 USD, purchaser price',0.357,0,0.357,?,3,3,1,4,1
+230302,'Residential maintenance and repair',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+230302,'Residential maintenance and repair','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+230302,'Residential maintenance and repair','other GHGs','kg CO2e/2018 USD, purchaser price',0.032,0,0.032,?,4,3,1,5,1
+233210,'Health care structures','carbon dioxide','kg/2018 USD, purchaser price',0.261,0,0.261,?,3,3,1,3,1
+233210,'Health care structures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+233210,'Health care structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+233210,'Health care structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.029,0,0.029,?,4,3,1,5,1
+233230,'Manufacturing structures','carbon dioxide','kg/2018 USD, purchaser price',0.383,0,0.383,?,3,3,1,3,1
+233230,'Manufacturing structures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+233230,'Manufacturing structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+233230,'Manufacturing structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.02,0,0.02,?,4,3,1,4,1
+233240,'Power and communication structures','carbon dioxide','kg/2018 USD, purchaser price',0.404,0,0.404,?,3,3,1,4,1
+233240,'Power and communication structures',methane,'kg/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,1,1
+233240,'Power and communication structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+233240,'Power and communication structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,4,3,1,4,1
+233262,'Educational and vocational structures','carbon dioxide','kg/2018 USD, purchaser price',0.243,0,0.243,?,3,3,1,3,1
+233262,'Educational and vocational structures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+233262,'Educational and vocational structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+233262,'Educational and vocational structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.025,0,0.025,?,4,3,1,5,1
+2332A0,'Commercial structures, including farm structures','carbon dioxide','kg/2018 USD, purchaser price',0.286,0,0.286,?,3,3,1,4,1
+2332A0,'Commercial structures, including farm structures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+2332A0,'Commercial structures, including farm structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+2332A0,'Commercial structures, including farm structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.04,0,0.04,?,4,3,1,5,1
+2332C0,'Transportation structures and highways and streets','carbon dioxide','kg/2018 USD, purchaser price',0.448,0,0.448,?,4,3,1,4,1
+2332C0,'Transportation structures and highways and streets',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+2332C0,'Transportation structures and highways and streets','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+2332C0,'Transportation structures and highways and streets','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,4,3,1,4,1
+2332D0,'Other nonresidential structures','carbon dioxide','kg/2018 USD, purchaser price',0.413,0,0.413,?,3,3,1,4,1
+2332D0,'Other nonresidential structures',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+2332D0,'Other nonresidential structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+2332D0,'Other nonresidential structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,4,3,1,4,1
+233411,'Single-family residential structures','carbon dioxide','kg/2018 USD, purchaser price',0.235,0,0.235,?,3,3,1,4,1
+233411,'Single-family residential structures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+233411,'Single-family residential structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+233411,'Single-family residential structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,4,3,1,4,1
+233412,'Multifamily residential structures','carbon dioxide','kg/2018 USD, purchaser price',0.142,0,0.142,?,3,3,1,3,1
+233412,'Multifamily residential structures',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+233412,'Multifamily residential structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+233412,'Multifamily residential structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,4,3,1,5,1
+2334A0,'Other residential structures','carbon dioxide','kg/2018 USD, purchaser price',0.362,0,0.362,?,3,3,1,4,1
+2334A0,'Other residential structures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+2334A0,'Other residential structures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+2334A0,'Other residential structures','other GHGs','kg CO2e/2018 USD, purchaser price',0.021,0,0.021,?,4,3,1,5,1
+311111,'Dog and cat food','carbon dioxide','kg/2018 USD, purchaser price',0.289,0.079,0.368,?,3,3,1,4,1
+311111,'Dog and cat food',methane,'kg/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,1,1
+311111,'Dog and cat food','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311111,'Dog and cat food','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,2,3,1,2,1
+311119,'Other animal food','carbon dioxide','kg/2018 USD, purchaser price',0.261,0.038,0.299,?,3,3,1,4,1
+311119,'Other animal food',methane,'kg/2018 USD, purchaser price',0.002,0,0.003,?,3,3,1,1,1
+311119,'Other animal food','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311119,'Other animal food','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+311210,'Flours and malts','carbon dioxide','kg/2018 USD, purchaser price',0.386,0.036,0.422,?,3,3,1,4,1
+311210,'Flours and malts',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,1,1
+311210,'Flours and malts','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311210,'Flours and malts','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+311221,'Corn products','carbon dioxide','kg/2018 USD, purchaser price',0.623,0.029,0.652,?,4,3,1,4,1
+311221,'Corn products',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,1,1
+311221,'Corn products','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311221,'Corn products','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+311224,'Soybean and other oilseed processing','carbon dioxide','kg/2018 USD, purchaser price',0.064,0.007,0.07,?,4,3,1,4,1
+311224,'Soybean and other oilseed processing',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+311224,'Soybean and other oilseed processing','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311224,'Soybean and other oilseed processing','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,4,1
+311225,'Refined vegetable, olive, and seed oils','carbon dioxide','kg/2018 USD, purchaser price',0.415,0.036,0.451,?,4,3,1,4,1
+311225,'Refined vegetable, olive, and seed oils',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+311225,'Refined vegetable, olive, and seed oils','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311225,'Refined vegetable, olive, and seed oils','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+311230,'Breakfast cereals','carbon dioxide','kg/2018 USD, purchaser price',0.416,0.097,0.513,?,3,3,1,4,1
+311230,'Breakfast cereals',methane,'kg/2018 USD, purchaser price',0.002,0,0.003,?,3,3,1,1,1
+311230,'Breakfast cereals','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311230,'Breakfast cereals','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,4,3,1,4,1
+311300,'Sugar, candy, and chocolate','carbon dioxide','kg/2018 USD, purchaser price',0.488,0.09,0.578,?,3,3,1,4,1
+311300,'Sugar, candy, and chocolate',methane,'kg/2018 USD, purchaser price',0.003,0.001,0.003,?,3,3,1,1,1
+311300,'Sugar, candy, and chocolate','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311300,'Sugar, candy, and chocolate','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,4,1
+311410,'Frozen food','carbon dioxide','kg/2018 USD, purchaser price',0.464,0.091,0.556,?,3,3,1,4,1
+311410,'Frozen food',methane,'kg/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,1,1
+311410,'Frozen food','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311410,'Frozen food','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,4,1
+311420,'Fruit and vegetable preservation','carbon dioxide','kg/2018 USD, purchaser price',0.323,0.07,0.393,?,3,3,1,4,1
+311420,'Fruit and vegetable preservation',methane,'kg/2018 USD, purchaser price',0.005,0,0.006,?,3,3,1,1,1
+311420,'Fruit and vegetable preservation','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311420,'Fruit and vegetable preservation','other GHGs','kg CO2e/2018 USD, purchaser price',0.033,0,0.033,?,4,3,1,4,1
+311513,Cheese,'carbon dioxide','kg/2018 USD, purchaser price',0.469,0.057,0.526,?,3,3,1,4,1
+311513,Cheese,methane,'kg/2018 USD, purchaser price',0.037,0,0.038,?,3,3,1,1,1
+311513,Cheese,'nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,3,1
+311513,Cheese,'other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,4,1
+311514,'Dry, condensed, and evaporated dairy','carbon dioxide','kg/2018 USD, purchaser price',0.466,0.062,0.527,?,3,3,1,4,1
+311514,'Dry, condensed, and evaporated dairy',methane,'kg/2018 USD, purchaser price',0.026,0,0.027,?,3,3,1,1,1
+311514,'Dry, condensed, and evaporated dairy','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,3,1
+311514,'Dry, condensed, and evaporated dairy','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,3,1
+31151A,'Fluid milk and butter','carbon dioxide','kg/2018 USD, purchaser price',0.447,0.073,0.52,?,3,3,1,4,1
+31151A,'Fluid milk and butter',methane,'kg/2018 USD, purchaser price',0.032,0,0.032,?,3,3,1,1,1
+31151A,'Fluid milk and butter','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,3,1
+31151A,'Fluid milk and butter','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+311520,'Ice cream and frozen desserts','carbon dioxide','kg/2018 USD, purchaser price',0.404,0.048,0.452,?,3,3,1,4,1
+311520,'Ice cream and frozen desserts',methane,'kg/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,1,1
+311520,'Ice cream and frozen desserts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+311520,'Ice cream and frozen desserts','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,4,3,1,4,1
+311615,'Packaged poultry','carbon dioxide','kg/2018 USD, purchaser price',0.527,0.058,0.586,?,4,3,1,4,1
+311615,'Packaged poultry',methane,'kg/2018 USD, purchaser price',0.006,0,0.007,?,3,3,1,1,1
+311615,'Packaged poultry','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+311615,'Packaged poultry','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+31161A,'Packaged meat (except poultry)','carbon dioxide','kg/2018 USD, purchaser price',0.445,0.059,0.504,?,4,3,1,4,1
+31161A,'Packaged meat (except poultry)',methane,'kg/2018 USD, purchaser price',0.043,0,0.043,?,4,3,1,1,1
+31161A,'Packaged meat (except poultry)','nitrous oxide','kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,4,1
+31161A,'Packaged meat (except poultry)','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,4,1
+311700,Seafood,'carbon dioxide','kg/2018 USD, purchaser price',0.31,0.064,0.374,?,4,3,1,4,1
+311700,Seafood,methane,'kg/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,1,1
+311700,Seafood,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311700,Seafood,'other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+311810,'Bread and other baked goods','carbon dioxide','kg/2018 USD, purchaser price',0.219,0.06,0.279,?,3,3,1,4,1
+311810,'Bread and other baked goods',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+311810,'Bread and other baked goods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311810,'Bread and other baked goods','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,4,1
+3118A0,'Cookies, crackers, pastas, and tortillas','carbon dioxide','kg/2018 USD, purchaser price',0.438,0.098,0.536,?,3,3,1,4,1
+3118A0,'Cookies, crackers, pastas, and tortillas',methane,'kg/2018 USD, purchaser price',0.004,0,0.005,?,3,3,1,1,1
+3118A0,'Cookies, crackers, pastas, and tortillas','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,4,1
+3118A0,'Cookies, crackers, pastas, and tortillas','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,4,3,1,4,1
+311910,'Snack foods','carbon dioxide','kg/2018 USD, purchaser price',0.191,0.043,0.233,?,3,3,1,4,1
+311910,'Snack foods',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+311910,'Snack foods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311910,'Snack foods','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,4,1
+311920,'Coffee and tea','carbon dioxide','kg/2018 USD, purchaser price',0.194,0.044,0.238,?,3,3,1,4,1
+311920,'Coffee and tea',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+311920,'Coffee and tea','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311920,'Coffee and tea','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+311930,'Flavored drink concentrates','carbon dioxide','kg/2018 USD, purchaser price',0.096,0.01,0.106,?,4,3,1,4,1
+311930,'Flavored drink concentrates',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+311930,'Flavored drink concentrates','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311930,'Flavored drink concentrates','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+311940,'Seasonings and dressings','carbon dioxide','kg/2018 USD, purchaser price',0.171,0.034,0.206,?,3,3,1,4,1
+311940,'Seasonings and dressings',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+311940,'Seasonings and dressings','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311940,'Seasonings and dressings','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+311990,'All other foods','carbon dioxide','kg/2018 USD, purchaser price',0.167,0.044,0.211,?,3,3,1,4,1
+311990,'All other foods',methane,'kg/2018 USD, purchaser price',0.002,0,0.003,?,3,3,1,1,1
+311990,'All other foods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+311990,'All other foods','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,3,1
+312110,'Soft drinks, bottled water, and ice','carbon dioxide','kg/2018 USD, purchaser price',0.223,0.051,0.274,?,3,3,1,3,1
+312110,'Soft drinks, bottled water, and ice',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,3,3,1,1,1
+312110,'Soft drinks, bottled water, and ice','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+312110,'Soft drinks, bottled water, and ice','other GHGs','kg CO2e/2018 USD, purchaser price',0.03,0,0.03,?,2,3,1,2,1
+312120,'Breweries and beer','carbon dioxide','kg/2018 USD, purchaser price',0.285,0.115,0.4,?,3,3,1,3,1
+312120,'Breweries and beer',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.002,?,3,3,1,1,1
+312120,'Breweries and beer','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+312120,'Breweries and beer','other GHGs','kg CO2e/2018 USD, purchaser price',0.014,0,0.014,?,3,3,1,2,1
+312130,'Wineries and wine','carbon dioxide','kg/2018 USD, purchaser price',0.17,0.167,0.337,?,3,3,1,3,1
+312130,'Wineries and wine',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,3,3,1,1,1
+312130,'Wineries and wine','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+312130,'Wineries and wine','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+312140,'Distilleries and spirits','carbon dioxide','kg/2018 USD, purchaser price',0.273,0.093,0.366,?,3,3,1,4,1
+312140,'Distilleries and spirits',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,3,3,1,1,1
+312140,'Distilleries and spirits','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+312140,'Distilleries and spirits','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+312200,'Tobacco products','carbon dioxide','kg/2018 USD, purchaser price',0.116,0.087,0.204,?,3,3,1,3,1
+312200,'Tobacco products',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,4,3,1,1,1
+312200,'Tobacco products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+312200,'Tobacco products','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,2,3,1,2,1
+313100,'Fiber, yarn, and thread','carbon dioxide','kg/2018 USD, purchaser price',0.523,0.042,0.565,?,3,3,1,3,1
+313100,'Fiber, yarn, and thread',methane,'kg/2018 USD, purchaser price',0.002,0,0.003,?,3,3,1,1,1
+313100,'Fiber, yarn, and thread','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+313100,'Fiber, yarn, and thread','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+313200,Fabric,'carbon dioxide','kg/2018 USD, purchaser price',0.358,0.061,0.419,?,3,3,1,3,1
+313200,Fabric,methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+313200,Fabric,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+313200,Fabric,'other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+313300,'Finished and coated fabric','carbon dioxide','kg/2018 USD, purchaser price',0.243,0.027,0.27,?,3,3,1,4,1
+313300,'Finished and coated fabric',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+313300,'Finished and coated fabric','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+313300,'Finished and coated fabric','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+314110,'Carpets and rugs','carbon dioxide','kg/2018 USD, purchaser price',0.433,0.246,0.679,?,3,3,1,3,1
+314110,'Carpets and rugs',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,3,3,1,1,1
+314110,'Carpets and rugs','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+314110,'Carpets and rugs','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,3,1
+314120,'Curtains and linens','carbon dioxide','kg/2018 USD, purchaser price',0.258,0.907,1.165,?,3,3,1,3,1
+314120,'Curtains and linens',methane,'kg/2018 USD, purchaser price',0.001,0.004,0.006,?,3,3,1,1,1
+314120,'Curtains and linens','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+314120,'Curtains and linens','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+314900,'Other textiles','carbon dioxide','kg/2018 USD, purchaser price',0.353,0.246,0.598,?,3,3,1,3,1
+314900,'Other textiles',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,3,3,1,1,1
+314900,'Other textiles','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+314900,'Other textiles','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,3,1
+315000,Clothing,'carbon dioxide','kg/2018 USD, purchaser price',0.119,1.872,1.991,?,3,3,1,3,1
+315000,Clothing,methane,'kg/2018 USD, purchaser price',0.001,0.009,0.009,?,3,3,1,1,1
+315000,Clothing,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+315000,Clothing,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+316000,Leather,'carbon dioxide','kg/2018 USD, purchaser price',0.109,0.807,0.916,?,3,3,1,4,1
+316000,Leather,methane,'kg/2018 USD, purchaser price',0.004,0.004,0.008,?,4,3,1,1,1
+316000,Leather,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+316000,Leather,'other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+321100,'Lumber and treated lumber','carbon dioxide','kg/2018 USD, purchaser price',0.224,0.046,0.269,?,3,3,1,3,1
+321100,'Lumber and treated lumber',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+321100,'Lumber and treated lumber','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+321100,'Lumber and treated lumber','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,3,1
+321200,'Plywood and veneer','carbon dioxide','kg/2018 USD, purchaser price',0.336,0.059,0.395,?,3,3,1,3,1
+321200,'Plywood and veneer',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+321200,'Plywood and veneer','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+321200,'Plywood and veneer','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+321910,'Wooden windows, door, and flooring','carbon dioxide','kg/2018 USD, purchaser price',0.227,0.073,0.3,?,3,3,1,3,1
+321910,'Wooden windows, door, and flooring',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+321910,'Wooden windows, door, and flooring','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+321910,'Wooden windows, door, and flooring','other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,4,3,1,4,1
+3219A0,'Veneer, plywood, and engineered wood','carbon dioxide','kg/2018 USD, purchaser price',0.266,0.087,0.352,?,3,3,1,3,1
+3219A0,'Veneer, plywood, and engineered wood',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+3219A0,'Veneer, plywood, and engineered wood','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+3219A0,'Veneer, plywood, and engineered wood','other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,3,3,1,4,1
+322110,'Wood pulp','carbon dioxide','kg/2018 USD, purchaser price',0.74,0.067,0.807,?,3,3,1,4,1
+322110,'Wood pulp',methane,'kg/2018 USD, purchaser price',0.003,0.001,0.004,?,4,3,1,1,1
+322110,'Wood pulp','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+322110,'Wood pulp','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+322120,Paper,'carbon dioxide','kg/2018 USD, purchaser price',0.916,0.093,1.009,?,3,3,1,4,1
+322120,Paper,methane,'kg/2018 USD, purchaser price',0.003,0.001,0.003,?,4,3,1,1,1
+322120,Paper,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+322120,Paper,'other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+322130,Cardboard,'carbon dioxide','kg/2018 USD, purchaser price',0.81,0.054,0.865,?,3,3,1,4,1
+322130,Cardboard,methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+322130,Cardboard,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+322130,Cardboard,'other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+322210,'Cardboard containers','carbon dioxide','kg/2018 USD, purchaser price',0.518,0.033,0.55,?,3,3,1,4,1
+322210,'Cardboard containers',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+322210,'Cardboard containers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+322210,'Cardboard containers','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+322220,'Paper bags and coated paper','carbon dioxide','kg/2018 USD, purchaser price',0.418,0.054,0.473,?,3,3,1,4,1
+322220,'Paper bags and coated paper',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+322220,'Paper bags and coated paper','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+322220,'Paper bags and coated paper','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+322230,Stationery,'carbon dioxide','kg/2018 USD, purchaser price',0.419,0.049,0.468,?,3,3,1,4,1
+322230,Stationery,methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+322230,Stationery,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+322230,Stationery,'other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,3,1
+322291,'Sanitary paper (tissues, napkins, diapers, etc.)','carbon dioxide','kg/2018 USD, purchaser price',0.477,0.169,0.646,?,3,3,1,3,1
+322291,'Sanitary paper (tissues, napkins, diapers, etc.)',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.002,?,4,3,1,1,1
+322291,'Sanitary paper (tissues, napkins, diapers, etc.)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+322291,'Sanitary paper (tissues, napkins, diapers, etc.)','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+322299,'All other converted paper products','carbon dioxide','kg/2018 USD, purchaser price',0.386,0.058,0.444,?,3,3,1,4,1
+322299,'All other converted paper products',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+322299,'All other converted paper products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+322299,'All other converted paper products','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+323110,'Books, newspapers, magazines, and other print media','carbon dioxide','kg/2018 USD, purchaser price',0.312,0.05,0.362,?,3,3,1,4,1
+323110,'Books, newspapers, magazines, and other print media',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+323110,'Books, newspapers, magazines, and other print media','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+323110,'Books, newspapers, magazines, and other print media','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+323120,'Printing support','carbon dioxide','kg/2018 USD, purchaser price',0.228,0.032,0.26,?,3,3,1,3,1
+323120,'Printing support',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+323120,'Printing support','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+323120,'Printing support','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+324110,'Gasoline, fuels, and by-products of petroleum refining','carbon dioxide','kg/2018 USD, purchaser price',0.577,0.055,0.632,?,4,3,1,3,1
+324110,'Gasoline, fuels, and by-products of petroleum refining',methane,'kg/2018 USD, purchaser price',0.015,0,0.015,?,4,3,1,1,1
+324110,'Gasoline, fuels, and by-products of petroleum refining','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+324110,'Gasoline, fuels, and by-products of petroleum refining','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+324121,'Asphalt pavement','carbon dioxide','kg/2018 USD, purchaser price',0.936,0.038,0.974,?,4,3,1,4,1
+324121,'Asphalt pavement',methane,'kg/2018 USD, purchaser price',0.006,0,0.006,?,4,3,1,1,1
+324121,'Asphalt pavement','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+324121,'Asphalt pavement','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+324122,'Asphalt shingles','carbon dioxide','kg/2018 USD, purchaser price',0.627,0.032,0.659,?,4,3,1,4,1
+324122,'Asphalt shingles',methane,'kg/2018 USD, purchaser price',0.004,0,0.005,?,4,3,1,1,1
+324122,'Asphalt shingles','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+324122,'Asphalt shingles','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+324190,'Other petroleum and coal products','carbon dioxide','kg/2018 USD, purchaser price',0.723,0.074,0.796,?,4,3,1,4,1
+324190,'Other petroleum and coal products',methane,'kg/2018 USD, purchaser price',0.01,0.001,0.011,?,4,3,1,1,1
+324190,'Other petroleum and coal products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+324190,'Other petroleum and coal products','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+325110,Petrochemicals,'carbon dioxide','kg/2018 USD, purchaser price',0.721,0.029,0.75,?,4,3,1,4,1
+325110,Petrochemicals,methane,'kg/2018 USD, purchaser price',0.009,0,0.009,?,4,3,1,1,1
+325110,Petrochemicals,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325110,Petrochemicals,'other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+325120,'Compressed Gases','carbon dioxide','kg/2018 USD, purchaser price',1.415,0.123,1.538,?,3,3,1,3,1
+325120,'Compressed Gases',methane,'kg/2018 USD, purchaser price',0.004,0.001,0.006,?,4,3,1,1,1
+325120,'Compressed Gases','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325120,'Compressed Gases','other GHGs','kg CO2e/2018 USD, purchaser price',1.083,0,1.083,?,2,3,1,1,1
+325130,'Synthetic dyes and pigments','carbon dioxide','kg/2018 USD, purchaser price',1.297,0.067,1.364,?,4,3,1,4,1
+325130,'Synthetic dyes and pigments',methane,'kg/2018 USD, purchaser price',0.003,0.001,0.004,?,4,3,1,1,1
+325130,'Synthetic dyes and pigments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325130,'Synthetic dyes and pigments','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+325180,'Other basic inorganic chemicals','carbon dioxide','kg/2018 USD, purchaser price',0.94,0.082,1.022,?,3,3,1,4,1
+325180,'Other basic inorganic chemicals',methane,'kg/2018 USD, purchaser price',0.003,0.001,0.004,?,4,3,1,1,1
+325180,'Other basic inorganic chemicals','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325180,'Other basic inorganic chemicals','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,2,3,1,2,1
+325190,'Other basic organic chemicals','carbon dioxide','kg/2018 USD, purchaser price',0.965,0.033,0.999,?,4,3,1,4,1
+325190,'Other basic organic chemicals',methane,'kg/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,1,1
+325190,'Other basic organic chemicals','nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,3,1
+325190,'Other basic organic chemicals','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+325211,Plastics,'carbon dioxide','kg/2018 USD, purchaser price',0.96,0.04,1,?,4,3,1,4,1
+325211,Plastics,methane,'kg/2018 USD, purchaser price',0.005,0,0.005,?,4,3,1,1,1
+325211,Plastics,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325211,Plastics,'other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+3252A0,'Synthetic rubber and artificial and synthetic fibers','carbon dioxide','kg/2018 USD, purchaser price',0.631,0.017,0.648,?,4,3,1,3,1
+3252A0,'Synthetic rubber and artificial and synthetic fibers',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,4,3,1,1,1
+3252A0,'Synthetic rubber and artificial and synthetic fibers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+3252A0,'Synthetic rubber and artificial and synthetic fibers','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+325310,Fertilizers,'carbon dioxide','kg/2018 USD, purchaser price',0.683,0.057,0.74,?,3,3,1,3,1
+325310,Fertilizers,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+325310,Fertilizers,'nitrous oxide','kg/2018 USD, purchaser price',0.001,0,0.001,?,2,3,1,1,1
+325310,Fertilizers,'other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+325320,Pesticides,'carbon dioxide','kg/2018 USD, purchaser price',0.135,0.018,0.153,?,4,3,1,4,1
+325320,Pesticides,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+325320,Pesticides,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325320,Pesticides,'other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+325411,'Medicinal and botanical ingredients','carbon dioxide','kg/2018 USD, purchaser price',0.208,0.032,0.24,?,4,3,1,2,1
+325411,'Medicinal and botanical ingredients',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+325411,'Medicinal and botanical ingredients','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+325411,'Medicinal and botanical ingredients','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+325412,'Pharmaceutical products (pills, powders, solutions, etc.)','carbon dioxide','kg/2018 USD, purchaser price',0.155,0.288,0.444,?,3,3,1,3,1
+325412,'Pharmaceutical products (pills, powders, solutions, etc.)',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,3,3,1,1,1
+325412,'Pharmaceutical products (pills, powders, solutions, etc.)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325412,'Pharmaceutical products (pills, powders, solutions, etc.)','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+325413,'Blood sugar, pregnancy, and other diagnostic test kits','carbon dioxide','kg/2018 USD, purchaser price',0.097,0.044,0.142,?,3,3,1,3,1
+325413,'Blood sugar, pregnancy, and other diagnostic test kits',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+325413,'Blood sugar, pregnancy, and other diagnostic test kits','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325413,'Blood sugar, pregnancy, and other diagnostic test kits','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,2,3,1,2,1
+325414,'Vaccines and other biological medical products','carbon dioxide','kg/2018 USD, purchaser price',0.046,0.055,0.101,?,3,3,1,4,1
+325414,'Vaccines and other biological medical products',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+325414,'Vaccines and other biological medical products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325414,'Vaccines and other biological medical products','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+325510,'Paints and coatings','carbon dioxide','kg/2018 USD, purchaser price',0.305,0.034,0.339,?,3,3,1,4,1
+325510,'Paints and coatings',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+325510,'Paints and coatings','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325510,'Paints and coatings','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+325520,Adhesives,'carbon dioxide','kg/2018 USD, purchaser price',0.186,0.01,0.196,?,4,3,1,4,1
+325520,Adhesives,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+325520,Adhesives,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325520,Adhesives,'other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,3,3,1,2,1
+325610,'Soap and cleaning compounds','carbon dioxide','kg/2018 USD, purchaser price',0.28,0.049,0.329,?,3,3,1,4,1
+325610,'Soap and cleaning compounds',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+325610,'Soap and cleaning compounds','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325610,'Soap and cleaning compounds','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,4,1
+325620,Toiletries,'carbon dioxide','kg/2018 USD, purchaser price',0.199,0.185,0.384,?,3,3,1,4,1
+325620,Toiletries,methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+325620,Toiletries,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325620,Toiletries,'other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+325910,'Ink and ink cartridges','carbon dioxide','kg/2018 USD, purchaser price',0.303,0.015,0.318,?,4,3,1,4,1
+325910,'Ink and ink cartridges',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+325910,'Ink and ink cartridges','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+325910,'Ink and ink cartridges','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+3259A0,'Chemicals (except basic chemicals, agrichemicals, polymers, paints, pharmaceuticals,soaps, cleaning compounds)','carbon dioxide','kg/2018 USD, purchaser price',0.413,0.052,0.464,?,3,3,1,4,1
+3259A0,'Chemicals (except basic chemicals, agrichemicals, polymers, paints, pharmaceuticals,soaps, cleaning compounds)',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+3259A0,'Chemicals (except basic chemicals, agrichemicals, polymers, paints, pharmaceuticals,soaps, cleaning compounds)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+3259A0,'Chemicals (except basic chemicals, agrichemicals, polymers, paints, pharmaceuticals,soaps, cleaning compounds)','other GHGs','kg CO2e/2018 USD, purchaser price',0.023,0,0.023,?,3,3,1,4,1
+326110,'Plastic bags, films, and sheets','carbon dioxide','kg/2018 USD, purchaser price',0.369,0.023,0.393,?,3,3,1,4,1
+326110,'Plastic bags, films, and sheets',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+326110,'Plastic bags, films, and sheets','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326110,'Plastic bags, films, and sheets','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+326120,'Plastic pipe, fittings, and sausage casings','carbon dioxide','kg/2018 USD, purchaser price',0.438,0.046,0.484,?,3,3,1,4,1
+326120,'Plastic pipe, fittings, and sausage casings',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+326120,'Plastic pipe, fittings, and sausage casings','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326120,'Plastic pipe, fittings, and sausage casings','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+326130,'Laminated plastic plates and shapes','carbon dioxide','kg/2018 USD, purchaser price',0.225,0.012,0.237,?,3,3,1,4,1
+326130,'Laminated plastic plates and shapes',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+326130,'Laminated plastic plates and shapes','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326130,'Laminated plastic plates and shapes','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,2,3,1,2,1
+326140,'Polystyrene foam products','carbon dioxide','kg/2018 USD, purchaser price',0.522,0.068,0.59,?,3,3,1,4,1
+326140,'Polystyrene foam products',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+326140,'Polystyrene foam products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326140,'Polystyrene foam products','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,3,1
+326150,'Urethane and other foam products','carbon dioxide','kg/2018 USD, purchaser price',0.179,0.03,0.209,?,3,3,1,4,1
+326150,'Urethane and other foam products',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+326150,'Urethane and other foam products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326150,'Urethane and other foam products','other GHGs','kg CO2e/2018 USD, purchaser price',0.077,0,0.077,?,4,3,1,4,1
+326160,'Plastic bottles','carbon dioxide','kg/2018 USD, purchaser price',0.248,0.013,0.26,?,3,3,1,4,1
+326160,'Plastic bottles',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+326160,'Plastic bottles','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326160,'Plastic bottles','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,3,1
+326190,'Other plastic products','carbon dioxide','kg/2018 USD, purchaser price',0.03,0.005,0.035,?,3,3,1,3,1
+326190,'Other plastic products',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+326190,'Other plastic products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326190,'Other plastic products','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,3,1
+326210,'Rubber tires','carbon dioxide','kg/2018 USD, purchaser price',0.307,0.124,0.432,?,3,3,1,4,1
+326210,'Rubber tires',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+326210,'Rubber tires','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326210,'Rubber tires','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+326220,'Rubber and plastic belts and hoses','carbon dioxide','kg/2018 USD, purchaser price',0.313,0.069,0.383,?,3,3,1,3,1
+326220,'Rubber and plastic belts and hoses',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+326220,'Rubber and plastic belts and hoses','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326220,'Rubber and plastic belts and hoses','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+326290,'Other rubber products','carbon dioxide','kg/2018 USD, purchaser price',0.179,0.021,0.2,?,3,3,1,3,1
+326290,'Other rubber products',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+326290,'Other rubber products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+326290,'Other rubber products','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+327100,'Clay and ceramic products','carbon dioxide','kg/2018 USD, purchaser price',0.434,0.22,0.654,?,3,3,1,4,1
+327100,'Clay and ceramic products',methane,'kg/2018 USD, purchaser price',0.002,0.002,0.003,?,4,3,1,1,1
+327100,'Clay and ceramic products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327100,'Clay and ceramic products','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+327200,'Glass and glass products','carbon dioxide','kg/2018 USD, purchaser price',0.648,0.126,0.774,?,3,3,1,3,1
+327200,'Glass and glass products',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+327200,'Glass and glass products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327200,'Glass and glass products','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+327310,Cement,'carbon dioxide','kg/2018 USD, purchaser price',5.382,0.096,5.478,?,3,3,1,2,1
+327310,Cement,methane,'kg/2018 USD, purchaser price',0.003,0.001,0.004,?,4,3,1,1,1
+327310,Cement,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,4,1
+327310,Cement,'other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+327320,'Ready-mix concrete','carbon dioxide','kg/2018 USD, purchaser price',1.161,0.108,1.269,?,3,3,1,3,1
+327320,'Ready-mix concrete',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+327320,'Ready-mix concrete','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327320,'Ready-mix concrete','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+327330,'Concrete pipe, bricks, and blocks','carbon dioxide','kg/2018 USD, purchaser price',0.484,0.106,0.59,?,3,3,1,3,1
+327330,'Concrete pipe, bricks, and blocks',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+327330,'Concrete pipe, bricks, and blocks','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327330,'Concrete pipe, bricks, and blocks','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+327390,'Other concrete products','carbon dioxide','kg/2018 USD, purchaser price',0.397,0.061,0.458,?,3,3,1,3,1
+327390,'Other concrete products',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+327390,'Other concrete products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327390,'Other concrete products','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+327400,'Lime and gypsum products','carbon dioxide','kg/2018 USD, purchaser price',3.322,0.115,3.437,?,3,3,1,3,1
+327400,'Lime and gypsum products',methane,'kg/2018 USD, purchaser price',0.004,0.001,0.005,?,4,3,1,1,1
+327400,'Lime and gypsum products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+327400,'Lime and gypsum products','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+327910,'Abrasive products','carbon dioxide','kg/2018 USD, purchaser price',0.206,0.117,0.323,?,3,3,1,3,1
+327910,'Abrasive products',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+327910,'Abrasive products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327910,'Abrasive products','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+327991,'Cut stone and stone products','carbon dioxide','kg/2018 USD, purchaser price',0.26,0.156,0.416,?,3,3,1,4,1
+327991,'Cut stone and stone products',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+327991,'Cut stone and stone products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327991,'Cut stone and stone products','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+327992,'Ground or treated minerals and earth','carbon dioxide','kg/2018 USD, purchaser price',0.507,0.246,0.753,?,3,3,1,4,1
+327992,'Ground or treated minerals and earth',methane,'kg/2018 USD, purchaser price',0.002,0.003,0.005,?,4,3,1,1,1
+327992,'Ground or treated minerals and earth','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327992,'Ground or treated minerals and earth','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+327993,'Mineral wool','carbon dioxide','kg/2018 USD, purchaser price',0.564,0.085,0.649,?,3,3,1,4,1
+327993,'Mineral wool',methane,'kg/2018 USD, purchaser price',0.002,0.001,0.003,?,4,3,1,1,1
+327993,'Mineral wool','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327993,'Mineral wool','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+327999,'Other nonmetallic mineral products','carbon dioxide','kg/2018 USD, purchaser price',0.776,0.082,0.858,?,3,3,1,3,1
+327999,'Other nonmetallic mineral products',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+327999,'Other nonmetallic mineral products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+327999,'Other nonmetallic mineral products','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+331110,'Primary iron, steel, and ferroalloy products','carbon dioxide','kg/2018 USD, purchaser price',0.856,0.035,0.891,?,3,3,1,2,1
+331110,'Primary iron, steel, and ferroalloy products',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,4,3,1,1,1
+331110,'Primary iron, steel, and ferroalloy products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331110,'Primary iron, steel, and ferroalloy products','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,2,1
+331200,'Secondary steel products','carbon dioxide','kg/2018 USD, purchaser price',0.506,0.043,0.55,?,3,3,1,3,1
+331200,'Secondary steel products',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+331200,'Secondary steel products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331200,'Secondary steel products','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,3,3,1,2,1
+331313,'Alumina refining and primary aluminum production','carbon dioxide','kg/2018 USD, purchaser price',0.808,0.029,0.838,?,3,3,1,2,1
+331313,'Alumina refining and primary aluminum production',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+331313,'Alumina refining and primary aluminum production','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+331313,'Alumina refining and primary aluminum production','other GHGs','kg CO2e/2018 USD, purchaser price',0.347,0,0.347,?,2,3,1,1,1
+33131B,'Aluminum products','carbon dioxide','kg/2018 USD, purchaser price',0.52,0.023,0.544,?,3,3,1,3,1
+33131B,'Aluminum products',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+33131B,'Aluminum products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33131B,'Aluminum products','other GHGs','kg CO2e/2018 USD, purchaser price',0.133,0,0.133,?,2,3,1,1,1
+331410,'Nonferrous Metal (except Aluminum) Smelting and Refining','carbon dioxide','kg/2018 USD, purchaser price',0.497,0.041,0.538,?,3,3,1,3,1
+331410,'Nonferrous Metal (except Aluminum) Smelting and Refining',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+331410,'Nonferrous Metal (except Aluminum) Smelting and Refining','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331410,'Nonferrous Metal (except Aluminum) Smelting and Refining','other GHGs','kg CO2e/2018 USD, purchaser price',0.074,0,0.074,?,4,3,1,1,1
+331420,'Secondary copper products','carbon dioxide','kg/2018 USD, purchaser price',0.511,0.027,0.538,?,3,3,1,3,1
+331420,'Secondary copper products',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+331420,'Secondary copper products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331420,'Secondary copper products','other GHGs','kg CO2e/2018 USD, purchaser price',0.042,0,0.042,?,4,3,1,1,1
+331490,'Other secondary nonferrous metal products','carbon dioxide','kg/2018 USD, purchaser price',0.417,0.023,0.441,?,3,3,1,3,1
+331490,'Other secondary nonferrous metal products',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+331490,'Other secondary nonferrous metal products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331490,'Other secondary nonferrous metal products','other GHGs','kg CO2e/2018 USD, purchaser price',0.088,0,0.088,?,4,3,1,1,1
+331510,'Cast iron and steel','carbon dioxide','kg/2018 USD, purchaser price',0.291,0.019,0.31,?,3,3,1,3,1
+331510,'Cast iron and steel',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+331510,'Cast iron and steel','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331510,'Cast iron and steel','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,2,1
+331520,'Nonferrous metal casts','carbon dioxide','kg/2018 USD, purchaser price',0.341,0.019,0.36,?,3,3,1,3,1
+331520,'Nonferrous metal casts',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+331520,'Nonferrous metal casts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+331520,'Nonferrous metal casts','other GHGs','kg CO2e/2018 USD, purchaser price',0.112,0,0.112,?,3,3,1,1,1
+332114,'Custom metal rolls','carbon dioxide','kg/2018 USD, purchaser price',0.446,0.016,0.462,?,3,3,1,3,1
+332114,'Custom metal rolls',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+332114,'Custom metal rolls','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332114,'Custom metal rolls','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,2,3,1,2,1
+332119,'Metal crown, closure, and other metal stamping (except automotive)','carbon dioxide','kg/2018 USD, purchaser price',0.301,0.027,0.328,?,3,3,1,3,1
+332119,'Metal crown, closure, and other metal stamping (except automotive)',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332119,'Metal crown, closure, and other metal stamping (except automotive)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332119,'Metal crown, closure, and other metal stamping (except automotive)','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,3,3,1,2,1
+33211A,'All other forging, stamping, and sintering','carbon dioxide','kg/2018 USD, purchaser price',0.272,0.012,0.284,?,3,3,1,3,1
+33211A,'All other forging, stamping, and sintering',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33211A,'All other forging, stamping, and sintering','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33211A,'All other forging, stamping, and sintering','other GHGs','kg CO2e/2018 USD, purchaser price',0.026,0,0.026,?,3,3,1,1,1
+332200,'Cutlery and handtools','carbon dioxide','kg/2018 USD, purchaser price',0.214,0.153,0.367,?,3,3,1,3,1
+332200,'Cutlery and handtools',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+332200,'Cutlery and handtools','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332200,'Cutlery and handtools','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,2,3,1,1,1
+332310,'Metal structural products','carbon dioxide','kg/2018 USD, purchaser price',0.414,0.032,0.446,?,3,3,1,3,1
+332310,'Metal structural products',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+332310,'Metal structural products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332310,'Metal structural products','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+332320,'Metal windows, doors, and architectural products','carbon dioxide','kg/2018 USD, purchaser price',0.315,0.058,0.374,?,3,3,1,3,1
+332320,'Metal windows, doors, and architectural products',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332320,'Metal windows, doors, and architectural products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332320,'Metal windows, doors, and architectural products','other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,3,3,1,2,1
+332410,'Power boilers and heat exchangers','carbon dioxide','kg/2018 USD, purchaser price',0.285,0.051,0.335,?,3,3,1,3,1
+332410,'Power boilers and heat exchangers',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332410,'Power boilers and heat exchangers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332410,'Power boilers and heat exchangers','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,2,1
+332420,'Heavy gauge metal tanks','carbon dioxide','kg/2018 USD, purchaser price',0.181,0.01,0.191,?,3,3,1,3,1
+332420,'Heavy gauge metal tanks',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332420,'Heavy gauge metal tanks','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332420,'Heavy gauge metal tanks','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,3,3,1,2,1
+332430,'Light gauge metal cans, boxes, and containers','carbon dioxide','kg/2018 USD, purchaser price',0.089,0.004,0.094,?,3,3,1,3,1
+332430,'Light gauge metal cans, boxes, and containers',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+332430,'Light gauge metal cans, boxes, and containers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332430,'Light gauge metal cans, boxes, and containers','other GHGs','kg CO2e/2018 USD, purchaser price',0.068,0,0.068,?,2,3,1,1,1
+332500,'Metal hinges, keys, lock, and other hardware','carbon dioxide','kg/2018 USD, purchaser price',0.173,0.089,0.262,?,3,3,1,3,1
+332500,'Metal hinges, keys, lock, and other hardware',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,4,3,1,1,1
+332500,'Metal hinges, keys, lock, and other hardware','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332500,'Metal hinges, keys, lock, and other hardware','other GHGs','kg CO2e/2018 USD, purchaser price',0.014,0,0.014,?,3,3,1,1,1
+332600,'Springs and wires','carbon dioxide','kg/2018 USD, purchaser price',0.034,0.003,0.038,?,3,3,1,3,1
+332600,'Springs and wires',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+332600,'Springs and wires','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332600,'Springs and wires','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,3,3,1,2,1
+332710,'Machine shops','carbon dioxide','kg/2018 USD, purchaser price',0.031,0.002,0.033,?,3,3,1,3,1
+332710,'Machine shops',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+332710,'Machine shops','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332710,'Machine shops','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,1,1
+332720,'Screws, nuts, and bolts','carbon dioxide','kg/2018 USD, purchaser price',0.332,0.039,0.371,?,3,3,1,3,1
+332720,'Screws, nuts, and bolts',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332720,'Screws, nuts, and bolts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332720,'Screws, nuts, and bolts','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+332800,'Metal coatings, engravings, and heat treatments','carbon dioxide','kg/2018 USD, purchaser price',0.395,0.012,0.407,?,3,3,1,3,1
+332800,'Metal coatings, engravings, and heat treatments',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332800,'Metal coatings, engravings, and heat treatments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332800,'Metal coatings, engravings, and heat treatments','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,2,1
+332913,'Metal plumbing drains, faucets, valves, and other fittings','carbon dioxide','kg/2018 USD, purchaser price',0.214,0.13,0.344,?,3,3,1,3,1
+332913,'Metal plumbing drains, faucets, valves, and other fittings',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,4,3,1,1,1
+332913,'Metal plumbing drains, faucets, valves, and other fittings','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332913,'Metal plumbing drains, faucets, valves, and other fittings','other GHGs','kg CO2e/2018 USD, purchaser price',0.016,0,0.016,?,3,3,1,1,1
+33291A,'Valve and fittings (except for plumbing)','carbon dioxide','kg/2018 USD, purchaser price',0.197,0.054,0.251,?,3,3,1,3,1
+33291A,'Valve and fittings (except for plumbing)',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33291A,'Valve and fittings (except for plumbing)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33291A,'Valve and fittings (except for plumbing)','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,1,1
+332991,'Ball and roller bearings','carbon dioxide','kg/2018 USD, purchaser price',0.314,0.06,0.374,?,3,3,1,3,1
+332991,'Ball and roller bearings',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+332991,'Ball and roller bearings','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332991,'Ball and roller bearings','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+332996,'Fabricated pipe and pipe fittings','carbon dioxide','kg/2018 USD, purchaser price',0.367,0.036,0.403,?,3,3,1,3,1
+332996,'Fabricated pipe and pipe fittings',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+332996,'Fabricated pipe and pipe fittings','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332996,'Fabricated pipe and pipe fittings','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+332999,'Other fabricated metal manufacturing','carbon dioxide','kg/2018 USD, purchaser price',0.408,0.079,0.487,?,3,3,1,3,1
+332999,'Other fabricated metal manufacturing',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+332999,'Other fabricated metal manufacturing','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+332999,'Other fabricated metal manufacturing','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,2,1
+33299A,'Ammunition, arms, ordnance, and related accessories','carbon dioxide','kg/2018 USD, purchaser price',0.228,0.128,0.356,?,3,3,1,3,1
+33299A,'Ammunition, arms, ordnance, and related accessories',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,3,3,1,1,1
+33299A,'Ammunition, arms, ordnance, and related accessories','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33299A,'Ammunition, arms, ordnance, and related accessories','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,1,1
+333111,'Farm machinery and equipment','carbon dioxide','kg/2018 USD, purchaser price',0.289,0.065,0.354,?,3,3,1,3,1
+333111,'Farm machinery and equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333111,'Farm machinery and equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333111,'Farm machinery and equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+333112,'Lawn and garden equipment','carbon dioxide','kg/2018 USD, purchaser price',0.271,0.329,0.6,?,3,3,1,3,1
+333112,'Lawn and garden equipment',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+333112,'Lawn and garden equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333112,'Lawn and garden equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,2,1
+333120,'Construction machinery','carbon dioxide','kg/2018 USD, purchaser price',0.16,0.039,0.198,?,3,3,1,3,1
+333120,'Construction machinery',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333120,'Construction machinery','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333120,'Construction machinery','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+333130,'Mining and oil/gas field machinery','carbon dioxide','kg/2018 USD, purchaser price',0.276,0.048,0.324,?,3,3,1,3,1
+333130,'Mining and oil/gas field machinery',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333130,'Mining and oil/gas field machinery','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333130,'Mining and oil/gas field machinery','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+333242,'Semiconductor machinery','carbon dioxide','kg/2018 USD, purchaser price',0.162,0.048,0.21,?,3,3,1,3,1
+333242,'Semiconductor machinery',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+333242,'Semiconductor machinery','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333242,'Semiconductor machinery','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+33329A,'Machinery for the paper, textile, food or other industries (except semiconductor machinery)','carbon dioxide','kg/2018 USD, purchaser price',0.258,0.062,0.32,?,3,3,1,3,1
+33329A,'Machinery for the paper, textile, food or other industries (except semiconductor machinery)',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33329A,'Machinery for the paper, textile, food or other industries (except semiconductor machinery)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33329A,'Machinery for the paper, textile, food or other industries (except semiconductor machinery)','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+333314,'Optical instruments and lenses','carbon dioxide','kg/2018 USD, purchaser price',0.131,0.07,0.202,?,3,3,1,3,1
+333314,'Optical instruments and lenses',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,4,3,1,1,1
+333314,'Optical instruments and lenses','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333314,'Optical instruments and lenses','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+333316,'Photography and photocopying equipment','carbon dioxide','kg/2018 USD, purchaser price',0.197,0.289,0.487,?,3,3,1,3,1
+333316,'Photography and photocopying equipment',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+333316,'Photography and photocopying equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333316,'Photography and photocopying equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,2,1
+333318,'Other commercial and service industry machinery','carbon dioxide','kg/2018 USD, purchaser price',0.372,0.113,0.485,?,4,3,1,4,1
+333318,'Other commercial and service industry machinery',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+333318,'Other commercial and service industry machinery','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333318,'Other commercial and service industry machinery','other GHGs','kg CO2e/2018 USD, purchaser price',0.028,0,0.028,?,4,3,1,4,1
+333413,'Industrial and commercial fan and blower and air purification equipment','carbon dioxide','kg/2018 USD, purchaser price',0.262,0.053,0.315,?,3,3,1,3,1
+333413,'Industrial and commercial fan and blower and air purification equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333413,'Industrial and commercial fan and blower and air purification equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333413,'Industrial and commercial fan and blower and air purification equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.029,0,0.029,?,3,3,1,3,1
+333414,'Heating equipment other than warm air furnaces','carbon dioxide','kg/2018 USD, purchaser price',0.286,0.11,0.397,?,3,3,1,3,1
+333414,'Heating equipment other than warm air furnaces',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+333414,'Heating equipment other than warm air furnaces','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333414,'Heating equipment other than warm air furnaces','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+333415,'Air conditioning, refrigeration, and warm air heating equipment','carbon dioxide','kg/2018 USD, purchaser price',0.253,0.102,0.354,?,3,3,1,3,1
+333415,'Air conditioning, refrigeration, and warm air heating equipment',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,4,3,1,1,1
+333415,'Air conditioning, refrigeration, and warm air heating equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333415,'Air conditioning, refrigeration, and warm air heating equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.293,0,0.293,?,4,3,1,5,1
+333511,'Industrial molds','carbon dioxide','kg/2018 USD, purchaser price',0.324,0.042,0.367,?,3,3,1,3,1
+333511,'Industrial molds',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333511,'Industrial molds','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333511,'Industrial molds','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,2,3,1,1,1
+333514,'Special tools, dies, jigs, and fixtures','carbon dioxide','kg/2018 USD, purchaser price',0.246,0.038,0.284,?,3,3,1,3,1
+333514,'Special tools, dies, jigs, and fixtures',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333514,'Special tools, dies, jigs, and fixtures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333514,'Special tools, dies, jigs, and fixtures','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+333517,'Machine tool manufacturing','carbon dioxide','kg/2018 USD, purchaser price',0.271,0.07,0.341,?,3,3,1,3,1
+333517,'Machine tool manufacturing',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,4,3,1,1,1
+333517,'Machine tool manufacturing','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333517,'Machine tool manufacturing','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+33351B,'Cutting and machine tool accessory, rolling mill, and other metalworking machines','carbon dioxide','kg/2018 USD, purchaser price',0.272,0.042,0.314,?,3,3,1,3,1
+33351B,'Cutting and machine tool accessory, rolling mill, and other metalworking machines',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33351B,'Cutting and machine tool accessory, rolling mill, and other metalworking machines','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33351B,'Cutting and machine tool accessory, rolling mill, and other metalworking machines','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,1,1
+333611,'Turbines and turbine generator sets','carbon dioxide','kg/2018 USD, purchaser price',0.267,0.05,0.317,?,3,3,1,3,1
+333611,'Turbines and turbine generator sets',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333611,'Turbines and turbine generator sets','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333611,'Turbines and turbine generator sets','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+333612,'Speed changers, industrial high-speed drives, and gears','carbon dioxide','kg/2018 USD, purchaser price',0.166,0.046,0.212,?,3,3,1,3,1
+333612,'Speed changers, industrial high-speed drives, and gears',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333612,'Speed changers, industrial high-speed drives, and gears','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333612,'Speed changers, industrial high-speed drives, and gears','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+333613,'Mechanical power transmission equipment','carbon dioxide','kg/2018 USD, purchaser price',0.204,0.045,0.248,?,3,3,1,3,1
+333613,'Mechanical power transmission equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333613,'Mechanical power transmission equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333613,'Mechanical power transmission equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+333618,'Other engine equipment','carbon dioxide','kg/2018 USD, purchaser price',0.233,0.043,0.276,?,3,3,1,3,1
+333618,'Other engine equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333618,'Other engine equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333618,'Other engine equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,3,3,1,3,1
+333912,'Air and gas compressors','carbon dioxide','kg/2018 USD, purchaser price',0.105,0.02,0.125,?,3,3,1,3,1
+333912,'Air and gas compressors',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,4,3,1,1,1
+333912,'Air and gas compressors','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333912,'Air and gas compressors','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+33391A,'Pumps and pumping equipment','carbon dioxide','kg/2018 USD, purchaser price',0.183,0.037,0.221,?,3,3,1,3,1
+33391A,'Pumps and pumping equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33391A,'Pumps and pumping equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33391A,'Pumps and pumping equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,2,1
+333920,'Material handling equipment','carbon dioxide','kg/2018 USD, purchaser price',0.236,0.028,0.264,?,3,3,1,3,1
+333920,'Material handling equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333920,'Material handling equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333920,'Material handling equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+333991,'Power tools','carbon dioxide','kg/2018 USD, purchaser price',0.227,0.336,0.562,?,3,3,1,3,1
+333991,'Power tools',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.002,?,4,3,1,1,1
+333991,'Power tools','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333991,'Power tools','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+333993,'Packaging machinery','carbon dioxide','kg/2018 USD, purchaser price',0.19,0.049,0.238,?,3,3,1,3,1
+333993,'Packaging machinery',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333993,'Packaging machinery','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333993,'Packaging machinery','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,2,3,1,1,1
+333994,'Industrial process furnaces and ovens','carbon dioxide','kg/2018 USD, purchaser price',0.198,0.035,0.233,?,3,3,1,3,1
+333994,'Industrial process furnaces and ovens',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+333994,'Industrial process furnaces and ovens','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+333994,'Industrial process furnaces and ovens','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,2,3,1,1,1
+33399A,'Welding and Soldering Equipment, Scales and Balances, and other general purpose machinery','carbon dioxide','kg/2018 USD, purchaser price',0.137,0.029,0.165,?,3,3,1,3,1
+33399A,'Welding and Soldering Equipment, Scales and Balances, and other general purpose machinery',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33399A,'Welding and Soldering Equipment, Scales and Balances, and other general purpose machinery','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33399A,'Welding and Soldering Equipment, Scales and Balances, and other general purpose machinery','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+33399B,'Hydraulic pumps, motors, cylinders and actuators','carbon dioxide','kg/2018 USD, purchaser price',0.276,0.05,0.326,?,3,3,1,3,1
+33399B,'Hydraulic pumps, motors, cylinders and actuators',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+33399B,'Hydraulic pumps, motors, cylinders and actuators','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33399B,'Hydraulic pumps, motors, cylinders and actuators','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+334111,Computers,'carbon dioxide','kg/2018 USD, purchaser price',0.033,0.462,0.496,?,3,3,1,3,1
+334111,Computers,methane,'kg/2018 USD, purchaser price',0,0.002,0.002,?,3,3,1,1,1
+334111,Computers,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+334111,Computers,'other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,2,3,1,1,1
+334112,'Computer storage device readers','carbon dioxide','kg/2018 USD, purchaser price',0.085,0.117,0.202,?,3,3,1,3,1
+334112,'Computer storage device readers',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,3,3,1,1,1
+334112,'Computer storage device readers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+334112,'Computer storage device readers','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,2,3,1,1,1
+334118,'Computer terminals and other computer peripheral equipment','carbon dioxide','kg/2018 USD, purchaser price',0.119,0.19,0.31,?,3,3,1,3,1
+334118,'Computer terminals and other computer peripheral equipment',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,4,3,1,1,1
+334118,'Computer terminals and other computer peripheral equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334118,'Computer terminals and other computer peripheral equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+334210,Telephones,'carbon dioxide','kg/2018 USD, purchaser price',0.054,0.185,0.238,?,3,3,1,3,1
+334210,Telephones,methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,3,3,1,1,1
+334210,Telephones,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334210,Telephones,'other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+334220,'Wireless communications','carbon dioxide','kg/2018 USD, purchaser price',0.046,0.165,0.211,?,3,3,1,3,1
+334220,'Wireless communications',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,3,3,1,1,1
+334220,'Wireless communications','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334220,'Wireless communications','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,2,1
+334290,'Communications equipment','carbon dioxide','kg/2018 USD, purchaser price',0.062,0.05,0.112,?,3,3,1,3,1
+334290,'Communications equipment',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,4,3,1,1,1
+334290,'Communications equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334290,'Communications equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+334300,'Audio and video equipment','carbon dioxide','kg/2018 USD, purchaser price',0.071,1.208,1.279,?,3,3,1,3,1
+334300,'Audio and video equipment',methane,'kg/2018 USD, purchaser price',0,0.005,0.006,?,4,3,1,1,1
+334300,'Audio and video equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334300,'Audio and video equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+334413,Semiconductors,'carbon dioxide','kg/2018 USD, purchaser price',0.117,0.047,0.165,?,3,3,1,3,1
+334413,Semiconductors,methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+334413,Semiconductors,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+334413,Semiconductors,'other GHGs','kg CO2e/2018 USD, purchaser price',0.081,0,0.081,?,2,3,1,1,1
+334418,'Printed circuit and electronic assembly','carbon dioxide','kg/2018 USD, purchaser price',0.098,0.026,0.124,?,3,3,1,3,1
+334418,'Printed circuit and electronic assembly',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+334418,'Printed circuit and electronic assembly','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334418,'Printed circuit and electronic assembly','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,2,3,1,1,1
+33441A,'Electronic capacitors, resistors, coils, transformers, connectors and other components (except  semiconductors and printed circuit assemblies)','carbon dioxide','kg/2018 USD, purchaser price',0.09,0.029,0.118,?,3,3,1,3,1
+33441A,'Electronic capacitors, resistors, coils, transformers, connectors and other components (except  semiconductors and printed circuit assemblies)',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+33441A,'Electronic capacitors, resistors, coils, transformers, connectors and other components (except  semiconductors and printed circuit assemblies)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33441A,'Electronic capacitors, resistors, coils, transformers, connectors and other components (except  semiconductors and printed circuit assemblies)','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+334510,'Electromedical appartuses','carbon dioxide','kg/2018 USD, purchaser price',0.049,0.057,0.106,?,3,3,1,3,1
+334510,'Electromedical appartuses',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+334510,'Electromedical appartuses','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334510,'Electromedical appartuses','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+334511,'Navigation instruments','carbon dioxide','kg/2018 USD, purchaser price',0.042,0.02,0.062,?,3,3,1,3,1
+334511,'Navigation instruments',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+334511,'Navigation instruments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334511,'Navigation instruments','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,2,1
+334512,'Automatic controls for HVAC and refrigeration equipment','carbon dioxide','kg/2018 USD, purchaser price',0.059,0.018,0.077,?,3,3,1,3,1
+334512,'Automatic controls for HVAC and refrigeration equipment',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+334512,'Automatic controls for HVAC and refrigeration equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334512,'Automatic controls for HVAC and refrigeration equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+334513,'Industrial process variable instruments','carbon dioxide','kg/2018 USD, purchaser price',0.072,0.021,0.093,?,3,3,1,3,1
+334513,'Industrial process variable instruments',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+334513,'Industrial process variable instruments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334513,'Industrial process variable instruments','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+334514,'Fluid meters and counting devices','carbon dioxide','kg/2018 USD, purchaser price',0.043,0.032,0.074,?,3,3,1,3,1
+334514,'Fluid meters and counting devices',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+334514,'Fluid meters and counting devices','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334514,'Fluid meters and counting devices','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,2,1
+334515,'Signal testing instruments','carbon dioxide','kg/2018 USD, purchaser price',0.063,0.033,0.096,?,3,3,1,3,1
+334515,'Signal testing instruments',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+334515,'Signal testing instruments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334515,'Signal testing instruments','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+334516,'Analytical laboratory instruments','carbon dioxide','kg/2018 USD, purchaser price',0.052,0.031,0.083,?,3,3,1,3,1
+334516,'Analytical laboratory instruments',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+334516,'Analytical laboratory instruments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334516,'Analytical laboratory instruments','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+334517,'Irradiation apparatuses','carbon dioxide','kg/2018 USD, purchaser price',0.095,0.048,0.142,?,3,3,1,3,1
+334517,'Irradiation apparatuses',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,4,3,1,1,1
+334517,'Irradiation apparatuses','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334517,'Irradiation apparatuses','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+33451A,'Watches, clocks, and other measuring and controlling devices','carbon dioxide','kg/2018 USD, purchaser price',0.052,0.14,0.192,?,3,3,1,3,1
+33451A,'Watches, clocks, and other measuring and controlling devices',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,4,3,1,1,1
+33451A,'Watches, clocks, and other measuring and controlling devices','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33451A,'Watches, clocks, and other measuring and controlling devices','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,2,1
+334610,'External hard drives, CDs, other storage media','carbon dioxide','kg/2018 USD, purchaser price',0.067,0.02,0.087,?,3,3,1,3,1
+334610,'External hard drives, CDs, other storage media',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+334610,'External hard drives, CDs, other storage media','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+334610,'External hard drives, CDs, other storage media','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+335110,'Light bulbs','carbon dioxide','kg/2018 USD, purchaser price',0.225,0.206,0.43,?,3,3,1,4,1
+335110,'Light bulbs',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+335110,'Light bulbs','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335110,'Light bulbs','other GHGs','kg CO2e/2018 USD, purchaser price',0.014,0,0.014,?,3,3,1,2,1
+335120,'Light fixtures','carbon dioxide','kg/2018 USD, purchaser price',0.229,0.223,0.452,?,3,3,1,3,1
+335120,'Light fixtures',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.003,?,4,3,1,1,1
+335120,'Light fixtures','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335120,'Light fixtures','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,3,1
+335210,'Small electrical appliances','carbon dioxide','kg/2018 USD, purchaser price',0.235,0.777,1.012,?,3,3,1,3,1
+335210,'Small electrical appliances',methane,'kg/2018 USD, purchaser price',0.001,0.006,0.007,?,4,3,1,1,1
+335210,'Small electrical appliances','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335210,'Small electrical appliances','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+335221,'Home cooking appliances','carbon dioxide','kg/2018 USD, purchaser price',0.298,0.247,0.545,?,3,3,1,3,1
+335221,'Home cooking appliances',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+335221,'Home cooking appliances','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335221,'Home cooking appliances','other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,3,3,1,2,1
+335222,'Home refrigerators and freezers','carbon dioxide','kg/2018 USD, purchaser price',0.23,0.265,0.495,?,3,3,1,3,1
+335222,'Home refrigerators and freezers',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+335222,'Home refrigerators and freezers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335222,'Home refrigerators and freezers','other GHGs','kg CO2e/2018 USD, purchaser price',0.089,0,0.089,?,4,3,1,5,1
+335224,'Home laundry machines','carbon dioxide','kg/2018 USD, purchaser price',0.305,0.214,0.519,?,3,3,1,3,1
+335224,'Home laundry machines',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+335224,'Home laundry machines','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335224,'Home laundry machines','other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,2,1
+335228,'Major home appliances (except ovens, stoves, refrigerators and laundry machines)','carbon dioxide','kg/2018 USD, purchaser price',0.272,0.103,0.375,?,3,3,1,3,1
+335228,'Major home appliances (except ovens, stoves, refrigerators and laundry machines)',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,4,3,1,1,1
+335228,'Major home appliances (except ovens, stoves, refrigerators and laundry machines)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335228,'Major home appliances (except ovens, stoves, refrigerators and laundry machines)','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+335311,'Specialty transformers','carbon dioxide','kg/2018 USD, purchaser price',0.313,0.052,0.365,?,3,3,1,3,1
+335311,'Specialty transformers',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+335311,'Specialty transformers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335311,'Specialty transformers','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+335312,'Motors and generators','carbon dioxide','kg/2018 USD, purchaser price',0.251,0.084,0.335,?,3,3,1,3,1
+335312,'Motors and generators',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+335312,'Motors and generators','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335312,'Motors and generators','other GHGs','kg CO2e/2018 USD, purchaser price',0.014,0,0.014,?,3,3,1,2,1
+335313,'Switchgear and switchboards','carbon dioxide','kg/2018 USD, purchaser price',0.27,0.054,0.324,?,3,3,1,3,1
+335313,'Switchgear and switchboards',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+335313,'Switchgear and switchboards','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335313,'Switchgear and switchboards','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,3,3,1,1,1
+335314,'Relay and industrial controls','carbon dioxide','kg/2018 USD, purchaser price',0.177,0.066,0.244,?,3,3,1,3,1
+335314,'Relay and industrial controls',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+335314,'Relay and industrial controls','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335314,'Relay and industrial controls','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+335911,'Storage batteries','carbon dioxide','kg/2018 USD, purchaser price',0.433,0.124,0.557,?,3,3,1,3,1
+335911,'Storage batteries',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+335911,'Storage batteries','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335911,'Storage batteries','other GHGs','kg CO2e/2018 USD, purchaser price',0.029,0,0.029,?,4,3,1,1,1
+335912,'Primary batteries','carbon dioxide','kg/2018 USD, purchaser price',0.32,0.215,0.535,?,3,3,1,3,1
+335912,'Primary batteries',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+335912,'Primary batteries','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335912,'Primary batteries','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,2,1
+335920,'Communication and energy wire and cable','carbon dioxide','kg/2018 USD, purchaser price',0.392,0.049,0.441,?,3,3,1,3,1
+335920,'Communication and energy wire and cable',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+335920,'Communication and energy wire and cable','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335920,'Communication and energy wire and cable','other GHGs','kg CO2e/2018 USD, purchaser price',0.022,0,0.022,?,3,3,1,1,1
+335930,'Wiring devices','carbon dioxide','kg/2018 USD, purchaser price',0.324,0.089,0.413,?,3,3,1,3,1
+335930,'Wiring devices',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+335930,'Wiring devices','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335930,'Wiring devices','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,3,3,1,2,1
+335991,'Carbon and graphite products','carbon dioxide','kg/2018 USD, purchaser price',0.216,0.009,0.225,?,3,3,1,4,1
+335991,'Carbon and graphite products',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+335991,'Carbon and graphite products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335991,'Carbon and graphite products','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+335999,'other miscellaneous electrical equipment and components','carbon dioxide','kg/2018 USD, purchaser price',0.179,0.062,0.241,?,3,3,1,3,1
+335999,'other miscellaneous electrical equipment and components',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+335999,'other miscellaneous electrical equipment and components','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+335999,'other miscellaneous electrical equipment and components','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,1,1
+336111,Automobiles,'carbon dioxide','kg/2018 USD, purchaser price',0.237,0.185,0.422,?,3,3,1,3,1
+336111,Automobiles,methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+336111,Automobiles,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336111,Automobiles,'other GHGs','kg CO2e/2018 USD, purchaser price',0.021,0,0.021,?,3,3,1,3,1
+336112,'Pickup trucks, vans, and SUVs','carbon dioxide','kg/2018 USD, purchaser price',0.258,0.035,0.293,?,3,3,1,3,1
+336112,'Pickup trucks, vans, and SUVs',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336112,'Pickup trucks, vans, and SUVs','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336112,'Pickup trucks, vans, and SUVs','other GHGs','kg CO2e/2018 USD, purchaser price',0.022,0,0.022,?,3,3,1,3,1
+336120,'Heavy duty trucks','carbon dioxide','kg/2018 USD, purchaser price',0.294,0.017,0.311,?,3,3,1,3,1
+336120,'Heavy duty trucks',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336120,'Heavy duty trucks','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336120,'Heavy duty trucks','other GHGs','kg CO2e/2018 USD, purchaser price',0.031,0,0.031,?,4,3,1,4,1
+336211,'Vehicle bodies','carbon dioxide','kg/2018 USD, purchaser price',0.278,0.055,0.333,?,3,3,1,3,1
+336211,'Vehicle bodies',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336211,'Vehicle bodies','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336211,'Vehicle bodies','other GHGs','kg CO2e/2018 USD, purchaser price',0.014,0,0.014,?,3,3,1,3,1
+336212,'Truck trailers','carbon dioxide','kg/2018 USD, purchaser price',0.195,0.03,0.225,?,3,3,1,3,1
+336212,'Truck trailers',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336212,'Truck trailers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336212,'Truck trailers','other GHGs','kg CO2e/2018 USD, purchaser price',0.05,0,0.05,?,3,3,1,3,1
+336213,'Motor homes','carbon dioxide','kg/2018 USD, purchaser price',0.237,0.098,0.335,?,3,3,1,3,1
+336213,'Motor homes',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336213,'Motor homes','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336213,'Motor homes','other GHGs','kg CO2e/2018 USD, purchaser price',0.03,0,0.03,?,3,3,1,4,1
+336214,'Travel trailer and campers','carbon dioxide','kg/2018 USD, purchaser price',0.405,0.074,0.479,?,3,3,1,3,1
+336214,'Travel trailer and campers',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+336214,'Travel trailer and campers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,2,1
+336214,'Travel trailer and campers','other GHGs','kg CO2e/2018 USD, purchaser price',0.045,0,0.045,?,3,3,1,3,1
+336310,'Vehicle engines and engine parts','carbon dioxide','kg/2018 USD, purchaser price',0.327,0.061,0.389,?,3,3,1,3,1
+336310,'Vehicle engines and engine parts',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336310,'Vehicle engines and engine parts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336310,'Vehicle engines and engine parts','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,2,1
+336320,'Vehicle electrical and electronic equipment','carbon dioxide','kg/2018 USD, purchaser price',0.307,0.103,0.41,?,3,3,1,3,1
+336320,'Vehicle electrical and electronic equipment',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+336320,'Vehicle electrical and electronic equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336320,'Vehicle electrical and electronic equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.017,0,0.017,?,3,3,1,1,1
+336350,'Transmission and power train parts','carbon dioxide','kg/2018 USD, purchaser price',0.229,0.032,0.261,?,3,3,1,3,1
+336350,'Transmission and power train parts',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336350,'Transmission and power train parts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336350,'Transmission and power train parts','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,3,3,1,1,1
+336360,'Vehicle seating and interior trim (upholstery)','carbon dioxide','kg/2018 USD, purchaser price',0.261,0.022,0.282,?,3,3,1,3,1
+336360,'Vehicle seating and interior trim (upholstery)',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+336360,'Vehicle seating and interior trim (upholstery)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+336360,'Vehicle seating and interior trim (upholstery)','other GHGs','kg CO2e/2018 USD, purchaser price',0.022,0,0.022,?,3,3,1,4,1
+336370,'Vehicle metal stamping','carbon dioxide','kg/2018 USD, purchaser price',0.504,0.019,0.523,?,3,3,1,3,1
+336370,'Vehicle metal stamping',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+336370,'Vehicle metal stamping','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336370,'Vehicle metal stamping','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,3,3,1,2,1
+336390,'Other vehicle parts','carbon dioxide','kg/2018 USD, purchaser price',0.369,0.062,0.43,?,3,3,1,3,1
+336390,'Other vehicle parts',methane,'kg/2018 USD, purchaser price',0.001,0,0.002,?,4,3,1,1,1
+336390,'Other vehicle parts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336390,'Other vehicle parts','other GHGs','kg CO2e/2018 USD, purchaser price',0.019,0,0.019,?,3,3,1,3,1
+3363A0,'Motor vehicle steering, suspension components (except spring), and brake systems','carbon dioxide','kg/2018 USD, purchaser price',0.311,0.057,0.368,?,3,3,1,3,1
+3363A0,'Motor vehicle steering, suspension components (except spring), and brake systems',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+3363A0,'Motor vehicle steering, suspension components (except spring), and brake systems','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+3363A0,'Motor vehicle steering, suspension components (except spring), and brake systems','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,3,3,1,2,1
+336411,Aircraft,'carbon dioxide','kg/2018 USD, purchaser price',0.092,0.008,0.099,?,3,3,1,3,1
+336411,Aircraft,methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+336411,Aircraft,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336411,Aircraft,'other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,2,3,1,2,1
+336412,'Aircraft engines and parts','carbon dioxide','kg/2018 USD, purchaser price',0.082,0.011,0.092,?,3,3,1,3,1
+336412,'Aircraft engines and parts',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+336412,'Aircraft engines and parts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336412,'Aircraft engines and parts','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+336413,'Other aircraft parts','carbon dioxide','kg/2018 USD, purchaser price',0.071,0.005,0.076,?,3,3,1,3,1
+336413,'Other aircraft parts',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+336413,'Other aircraft parts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336413,'Other aircraft parts','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,2,3,1,1,1
+336414,'Guided missiles and space vehicles','carbon dioxide','kg/2018 USD, purchaser price',0.105,0.007,0.113,?,3,3,1,3,1
+336414,'Guided missiles and space vehicles',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+336414,'Guided missiles and space vehicles','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336414,'Guided missiles and space vehicles','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,2,3,1,2,1
+33641A,'Propulsion units and parts for space vehicles and guided missiles','carbon dioxide','kg/2018 USD, purchaser price',0.113,0.009,0.122,?,3,3,1,4,1
+33641A,'Propulsion units and parts for space vehicles and guided missiles',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+33641A,'Propulsion units and parts for space vehicles and guided missiles','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33641A,'Propulsion units and parts for space vehicles and guided missiles','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+336500,'Railroad rolling stock','carbon dioxide','kg/2018 USD, purchaser price',0.306,0.025,0.331,?,3,3,1,3,1
+336500,'Railroad rolling stock',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336500,'Railroad rolling stock','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336500,'Railroad rolling stock','other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+336611,'Ships and ship repair','carbon dioxide','kg/2018 USD, purchaser price',0.159,0.009,0.168,?,3,3,1,3,1
+336611,'Ships and ship repair',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+336611,'Ships and ship repair','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336611,'Ships and ship repair','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,3,3,1,2,1
+336612,Boats,'carbon dioxide','kg/2018 USD, purchaser price',0.186,0.076,0.262,?,3,3,1,3,1
+336612,Boats,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+336612,Boats,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336612,Boats,'other GHGs','kg CO2e/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,2,1
+336991,'Motorcycle, bicycle, and parts','carbon dioxide','kg/2018 USD, purchaser price',0.091,0.063,0.154,?,3,3,1,3,1
+336991,'Motorcycle, bicycle, and parts',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,4,3,1,1,1
+336991,'Motorcycle, bicycle, and parts','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336991,'Motorcycle, bicycle, and parts','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,2,3,1,1,1
+336992,'Military armored vehicles and tanks','carbon dioxide','kg/2018 USD, purchaser price',0.201,0.009,0.209,?,3,3,1,3,1
+336992,'Military armored vehicles and tanks',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336992,'Military armored vehicles and tanks','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336992,'Military armored vehicles and tanks','other GHGs','kg CO2e/2018 USD, purchaser price',0.019,0,0.019,?,2,3,1,1,1
+336999,'Other transportation equipment','carbon dioxide','kg/2018 USD, purchaser price',0.264,0.067,0.331,?,3,3,1,3,1
+336999,'Other transportation equipment',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+336999,'Other transportation equipment','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+336999,'Other transportation equipment','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,3,3,1,2,1
+337110,'Wood kitchen cabinets and countertops','carbon dioxide','kg/2018 USD, purchaser price',0.163,0.108,0.271,?,3,3,1,3,1
+337110,'Wood kitchen cabinets and countertops',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,3,3,1,1,1
+337110,'Wood kitchen cabinets and countertops','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+337110,'Wood kitchen cabinets and countertops','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,3,1
+337121,'Home furniture - upholstered','carbon dioxide','kg/2018 USD, purchaser price',0.255,0.26,0.516,?,3,3,1,3,1
+337121,'Home furniture - upholstered',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.003,?,3,3,1,1,1
+337121,'Home furniture - upholstered','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+337121,'Home furniture - upholstered','other GHGs','kg CO2e/2018 USD, purchaser price',0.042,0,0.042,?,4,3,1,4,1
+337122,'Home furniture - wood, nonupholstered','carbon dioxide','kg/2018 USD, purchaser price',0.294,0.856,1.15,?,3,3,1,3,1
+337122,'Home furniture - wood, nonupholstered',methane,'kg/2018 USD, purchaser price',0.001,0.005,0.006,?,4,3,1,1,1
+337122,'Home furniture - wood, nonupholstered','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+337122,'Home furniture - wood, nonupholstered','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,3,3,1,3,1
+337127,'Institutional furniture','carbon dioxide','kg/2018 USD, purchaser price',0.318,0.25,0.567,?,3,3,1,3,1
+337127,'Institutional furniture',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.004,?,4,3,1,1,1
+337127,'Institutional furniture','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+337127,'Institutional furniture','other GHGs','kg CO2e/2018 USD, purchaser price',0.019,0,0.019,?,3,3,1,2,1
+33712N,'Other household nonupholstered furniture','carbon dioxide','kg/2018 USD, purchaser price',0.345,0.528,0.873,?,3,3,1,3,1
+33712N,'Other household nonupholstered furniture',methane,'kg/2018 USD, purchaser price',0.001,0.003,0.005,?,4,3,1,1,1
+33712N,'Other household nonupholstered furniture','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33712N,'Other household nonupholstered furniture','other GHGs','kg CO2e/2018 USD, purchaser price',0.037,0,0.037,?,2,3,1,2,1
+337215,'Shelving and lockers','carbon dioxide','kg/2018 USD, purchaser price',0.393,0.198,0.591,?,3,3,1,3,1
+337215,'Shelving and lockers',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.003,?,4,3,1,1,1
+337215,'Shelving and lockers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+337215,'Shelving and lockers','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,3,3,1,2,1
+33721A,'Office furniture and custom architectural woodwork and millwork','carbon dioxide','kg/2018 USD, purchaser price',0.275,0.1,0.375,?,3,3,1,3,1
+33721A,'Office furniture and custom architectural woodwork and millwork',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+33721A,'Office furniture and custom architectural woodwork and millwork','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+33721A,'Office furniture and custom architectural woodwork and millwork','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,3,3,1,3,1
+337900,'Mattresses, blinds and shades','carbon dioxide','kg/2018 USD, purchaser price',0.243,0.315,0.557,?,3,3,1,3,1
+337900,'Mattresses, blinds and shades',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.003,?,3,3,1,1,1
+337900,'Mattresses, blinds and shades','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+337900,'Mattresses, blinds and shades','other GHGs','kg CO2e/2018 USD, purchaser price',0.054,0,0.054,?,4,3,1,4,1
+339112,'Surgical and medical instruments','carbon dioxide','kg/2018 USD, purchaser price',0.135,0.05,0.185,?,3,3,1,3,1
+339112,'Surgical and medical instruments',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+339112,'Surgical and medical instruments','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339112,'Surgical and medical instruments','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+339113,'Surgical appliance and supplies','carbon dioxide','kg/2018 USD, purchaser price',0.158,0.115,0.274,?,3,3,1,3,1
+339113,'Surgical appliance and supplies',methane,'kg/2018 USD, purchaser price',0.001,0.001,0.001,?,3,3,1,1,1
+339113,'Surgical appliance and supplies','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339113,'Surgical appliance and supplies','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+339114,'Dental equipment and supplies','carbon dioxide','kg/2018 USD, purchaser price',0.206,0.057,0.263,?,3,3,1,3,1
+339114,'Dental equipment and supplies',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+339114,'Dental equipment and supplies','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339114,'Dental equipment and supplies','other GHGs','kg CO2e/2018 USD, purchaser price',0.016,0,0.016,?,4,3,1,1,1
+339115,'Ophthalmic goods','carbon dioxide','kg/2018 USD, purchaser price',0.115,0.274,0.389,?,3,3,1,3,1
+339115,'Ophthalmic goods',methane,'kg/2018 USD, purchaser price',0,0.001,0.002,?,3,3,1,1,1
+339115,'Ophthalmic goods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339115,'Ophthalmic goods','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+339116,'Dental laboratories','carbon dioxide','kg/2018 USD, purchaser price',0.131,0.043,0.174,?,3,3,1,3,1
+339116,'Dental laboratories',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+339116,'Dental laboratories','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339116,'Dental laboratories','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,4,3,1,1,1
+339910,'Jewelry and silverware','carbon dioxide','kg/2018 USD, purchaser price',0.082,0.185,0.267,?,3,3,1,3,1
+339910,'Jewelry and silverware',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,3,3,1,1,1
+339910,'Jewelry and silverware','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339910,'Jewelry and silverware','other GHGs','kg CO2e/2018 USD, purchaser price',0.015,0,0.015,?,4,3,1,1,1
+339920,'Sporting and athletic goods','carbon dioxide','kg/2018 USD, purchaser price',0.248,0.405,0.653,?,3,3,1,3,1
+339920,'Sporting and athletic goods',methane,'kg/2018 USD, purchaser price',0.001,0.003,0.004,?,4,3,1,1,1
+339920,'Sporting and athletic goods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339920,'Sporting and athletic goods','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,3,3,1,2,1
+339930,'Dolls, toys, and games','carbon dioxide','kg/2018 USD, purchaser price',0.209,3.285,3.494,?,3,3,1,3,1
+339930,'Dolls, toys, and games',methane,'kg/2018 USD, purchaser price',0.001,0.02,0.021,?,4,3,1,1,1
+339930,'Dolls, toys, and games','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339930,'Dolls, toys, and games','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,3,1
+339940,'Office supplies (not paper)','carbon dioxide','kg/2018 USD, purchaser price',0.251,0.204,0.455,?,3,3,1,4,1
+339940,'Office supplies (not paper)',methane,'kg/2018 USD, purchaser price',0.001,0.002,0.003,?,4,3,1,1,1
+339940,'Office supplies (not paper)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339940,'Office supplies (not paper)','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,2,1
+339950,Signs,'carbon dioxide','kg/2018 USD, purchaser price',0.267,0.103,0.37,?,3,3,1,3,1
+339950,Signs,methane,'kg/2018 USD, purchaser price',0.001,0.001,0.002,?,4,3,1,1,1
+339950,Signs,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+339950,Signs,'other GHGs','kg CO2e/2018 USD, purchaser price',0.011,0,0.011,?,3,3,1,3,1
+339990,'Gaskets, seals, musical instruments, fasteners, brooms, brushes, mop and other misc. goods','carbon dioxide','kg/2018 USD, purchaser price',0.065,0.079,0.144,?,3,3,1,3,1
+339990,'Gaskets, seals, musical instruments, fasteners, brooms, brushes, mop and other misc. goods',methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,4,3,1,1,1
+339990,'Gaskets, seals, musical instruments, fasteners, brooms, brushes, mop and other misc. goods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+339990,'Gaskets, seals, musical instruments, fasteners, brooms, brushes, mop and other misc. goods','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,2,1
+4200ID,'Customs duties','carbon dioxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+4200ID,'Customs duties',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+4200ID,'Customs duties','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+4200ID,'Customs duties','other GHGs','kg CO2e/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+423100,'Motor vehicle and motor vehicle parts and supplies','carbon dioxide','kg/2018 USD, purchaser price',0.168,0,0.168,?,3,3,1,3,1
+423100,'Motor vehicle and motor vehicle parts and supplies',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+423100,'Motor vehicle and motor vehicle parts and supplies','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+423100,'Motor vehicle and motor vehicle parts and supplies','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+423400,'Professional and commercial equipment and supplies','carbon dioxide','kg/2018 USD, purchaser price',0.107,0,0.107,?,3,3,1,3,1
+423400,'Professional and commercial equipment and supplies',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+423400,'Professional and commercial equipment and supplies','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+423400,'Professional and commercial equipment and supplies','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+423600,'Household appliances and electrical and electronic goods','carbon dioxide','kg/2018 USD, purchaser price',0.137,0,0.137,?,3,3,1,3,1
+423600,'Household appliances and electrical and electronic goods',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+423600,'Household appliances and electrical and electronic goods','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+423600,'Household appliances and electrical and electronic goods','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+423800,'Machinery, equipment, and supplies','carbon dioxide','kg/2018 USD, purchaser price',0.15,0,0.15,?,3,3,1,3,1
+423800,'Machinery, equipment, and supplies',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+423800,'Machinery, equipment, and supplies','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+423800,'Machinery, equipment, and supplies','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+423A00,'Other durable goods merchant wholesalers','carbon dioxide','kg/2018 USD, purchaser price',0.197,0,0.197,?,3,3,1,3,1
+423A00,'Other durable goods merchant wholesalers',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+423A00,'Other durable goods merchant wholesalers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+423A00,'Other durable goods merchant wholesalers','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+424200,'Drugs and druggists’ sundries','carbon dioxide','kg/2018 USD, purchaser price',0.149,0,0.149,?,3,3,1,3,1
+424200,'Drugs and druggists’ sundries',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+424200,'Drugs and druggists’ sundries','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+424200,'Drugs and druggists’ sundries','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,4,1
+424400,'Grocery and related product wholesalers','carbon dioxide','kg/2018 USD, purchaser price',0.213,0,0.213,?,3,3,1,3,1
+424400,'Grocery and related product wholesalers',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+424400,'Grocery and related product wholesalers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+424400,'Grocery and related product wholesalers','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,4,3,1,4,1
+424700,'Petroleum and petroleum products','carbon dioxide','kg/2018 USD, purchaser price',0.089,0,0.089,?,3,3,1,3,1
+424700,'Petroleum and petroleum products',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+424700,'Petroleum and petroleum products','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+424700,'Petroleum and petroleum products','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+424A00,'Other nondurable goods merchant wholesalers','carbon dioxide','kg/2018 USD, purchaser price',0.187,0,0.187,?,3,3,1,3,1
+424A00,'Other nondurable goods merchant wholesalers',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+424A00,'Other nondurable goods merchant wholesalers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+424A00,'Other nondurable goods merchant wholesalers','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+425000,'Wholesale electronic markets and agents and brokers','carbon dioxide','kg/2018 USD, purchaser price',0.059,0,0.059,?,3,3,1,3,1
+425000,'Wholesale electronic markets and agents and brokers',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+425000,'Wholesale electronic markets and agents and brokers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+425000,'Wholesale electronic markets and agents and brokers','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,3,1
+441000,'Vehicles and parts sales','carbon dioxide','kg/2018 USD, purchaser price',0.139,0,0.139,?,3,3,1,3,1
+441000,'Vehicles and parts sales',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+441000,'Vehicles and parts sales','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+441000,'Vehicles and parts sales','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+444000,'Building material and garden equipment and supplies dealers','carbon dioxide','kg/2018 USD, purchaser price',0.162,0,0.162,?,2,3,1,2,1
+444000,'Building material and garden equipment and supplies dealers',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+444000,'Building material and garden equipment and supplies dealers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+444000,'Building material and garden equipment and supplies dealers','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+445000,'Food and beverage stores','carbon dioxide','kg/2018 USD, purchaser price',0.304,0,0.304,?,2,3,1,2,1
+445000,'Food and beverage stores',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+445000,'Food and beverage stores','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+445000,'Food and beverage stores','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,4,1
+446000,'Health and personal care stores','carbon dioxide','kg/2018 USD, purchaser price',0.163,0,0.163,?,3,3,1,3,1
+446000,'Health and personal care stores',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+446000,'Health and personal care stores','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+446000,'Health and personal care stores','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+447000,'Gasoline stations','carbon dioxide','kg/2018 USD, purchaser price',0.317,0,0.317,?,2,3,1,2,1
+447000,'Gasoline stations',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+447000,'Gasoline stations','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+447000,'Gasoline stations','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+448000,'Clothing and clothing accessories stores','carbon dioxide','kg/2018 USD, purchaser price',0.22,0,0.22,?,3,3,1,3,1
+448000,'Clothing and clothing accessories stores',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+448000,'Clothing and clothing accessories stores','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+448000,'Clothing and clothing accessories stores','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+452000,'General merchandise stores','carbon dioxide','kg/2018 USD, purchaser price',0.211,0,0.211,?,2,3,1,2,1
+452000,'General merchandise stores',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+452000,'General merchandise stores','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+452000,'General merchandise stores','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+454000,'Nonstore retailers','carbon dioxide','kg/2018 USD, purchaser price',0.11,0,0.11,?,3,3,1,3,1
+454000,'Nonstore retailers',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+454000,'Nonstore retailers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+454000,'Nonstore retailers','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,4,1
+481000,'Air transport','carbon dioxide','kg/2018 USD, purchaser price',0.872,0,0.872,?,4,3,1,1,1
+481000,'Air transport',methane,'kg/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,1,1
+481000,'Air transport','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+481000,'Air transport','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+482000,'Rail transport','carbon dioxide','kg/2018 USD, purchaser price',0.662,0,0.662,?,4,3,1,4,1
+482000,'Rail transport',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,1,1
+482000,'Rail transport','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+482000,'Rail transport','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,4,1
+483000,'Water transport (boats, ships, ferries)','carbon dioxide','kg/2018 USD, purchaser price',0.81,0,0.81,?,4,3,1,2,1
+483000,'Water transport (boats, ships, ferries)',methane,'kg/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,1,1
+483000,'Water transport (boats, ships, ferries)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+483000,'Water transport (boats, ships, ferries)','other GHGs','kg CO2e/2018 USD, purchaser price',0.034,0,0.034,?,4,3,1,5,1
+484000,'Truck transport','carbon dioxide','kg/2018 USD, purchaser price',1.441,0,1.441,?,4,3,1,4,1
+484000,'Truck transport',methane,'kg/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,1,1
+484000,'Truck transport','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+484000,'Truck transport','other GHGs','kg CO2e/2018 USD, purchaser price',0.021,0,0.021,?,4,3,1,5,1
+485000,'Passenger ground transport','carbon dioxide','kg/2018 USD, purchaser price',0.327,0,0.327,?,4,3,1,3,1
+485000,'Passenger ground transport',methane,'kg/2018 USD, purchaser price',0.006,0,0.006,?,4,3,1,1,1
+485000,'Passenger ground transport','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+485000,'Passenger ground transport','other GHGs','kg CO2e/2018 USD, purchaser price',0.009,0,0.009,?,4,3,1,4,1
+486000,'Pipeline transport','carbon dioxide','kg/2018 USD, purchaser price',1.232,0,1.232,?,4,3,1,1,1
+486000,'Pipeline transport',methane,'kg/2018 USD, purchaser price',0.031,0,0.031,?,4,3,1,1,1
+486000,'Pipeline transport','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+486000,'Pipeline transport','other GHGs','kg CO2e/2018 USD, purchaser price',0.012,0,0.012,?,4,3,1,5,1
+48A000,'Scenic and sightseeing transportation and support activities for transportation','carbon dioxide','kg/2018 USD, purchaser price',0.272,0,0.272,?,3,3,1,3,1
+48A000,'Scenic and sightseeing transportation and support activities for transportation',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,2,1
+48A000,'Scenic and sightseeing transportation and support activities for transportation','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+48A000,'Scenic and sightseeing transportation and support activities for transportation','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+491000,'Postal service','carbon dioxide','kg/2018 USD, purchaser price',0.183,0,0.183,?,3,3,1,3,1
+491000,'Postal service',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+491000,'Postal service','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,2,1
+491000,'Postal service','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+492000,'Couriers and messengers','carbon dioxide','kg/2018 USD, purchaser price',0.52,0,0.52,?,4,3,1,4,1
+492000,'Couriers and messengers',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,4,3,1,2,1
+492000,'Couriers and messengers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+492000,'Couriers and messengers','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+493000,Warehousing,'carbon dioxide','kg/2018 USD, purchaser price',0.701,0,0.701,?,2,3,1,2,1
+493000,Warehousing,methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+493000,Warehousing,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+493000,Warehousing,'other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+4B0000,'All other retail','carbon dioxide','kg/2018 USD, purchaser price',0.19,0,0.19,?,3,3,1,3,1
+4B0000,'All other retail',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+4B0000,'All other retail','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+4B0000,'All other retail','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+511110,Newspapers,'carbon dioxide','kg/2018 USD, purchaser price',0.118,0.076,0.194,?,3,3,1,3,1
+511110,Newspapers,methane,'kg/2018 USD, purchaser price',0,0.001,0.001,?,4,3,1,1,1
+511110,Newspapers,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+511110,Newspapers,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+511120,'Magazines and journals','carbon dioxide','kg/2018 USD, purchaser price',0.087,0.051,0.138,?,3,3,1,3,1
+511120,'Magazines and journals',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+511120,'Magazines and journals','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+511120,'Magazines and journals','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+511130,Books,'carbon dioxide','kg/2018 USD, purchaser price',0.103,0.08,0.183,?,3,3,1,3,1
+511130,Books,methane,'kg/2018 USD, purchaser price',0,0,0.001,?,3,3,1,1,1
+511130,Books,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+511130,Books,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+5111A0,'Directory, mailing list, and other publishers','carbon dioxide','kg/2018 USD, purchaser price',0.094,0.074,0.168,?,3,3,1,3,1
+5111A0,'Directory, mailing list, and other publishers',methane,'kg/2018 USD, purchaser price',0,0,0.001,?,4,3,1,1,1
+5111A0,'Directory, mailing list, and other publishers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+5111A0,'Directory, mailing list, and other publishers','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+511200,Software,'carbon dioxide','kg/2018 USD, purchaser price',0.04,0.041,0.081,?,3,3,1,3,1
+511200,Software,methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+511200,Software,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+511200,Software,'other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,3,1
+512100,'Movies and film','carbon dioxide','kg/2018 USD, purchaser price',0.049,0.007,0.055,?,3,3,1,3,1
+512100,'Movies and film',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+512100,'Movies and film','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+512100,'Movies and film','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+512200,'Sound recording','carbon dioxide','kg/2018 USD, purchaser price',0.029,0.048,0.077,?,3,3,1,3,1
+512200,'Sound recording',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+512200,'Sound recording','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+512200,'Sound recording','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,3,1
+515100,'Radio and television','carbon dioxide','kg/2018 USD, purchaser price',0.051,0,0.051,?,3,3,1,3,1
+515100,'Radio and television',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+515100,'Radio and television','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+515100,'Radio and television','other GHGs','kg CO2e/2018 USD, purchaser price',0.02,0,0.02,?,4,3,1,4,1
+515200,'Cable and subscription programming','carbon dioxide','kg/2018 USD, purchaser price',0.08,0,0.08,?,3,3,1,3,1
+515200,'Cable and subscription programming',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+515200,'Cable and subscription programming','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+515200,'Cable and subscription programming','other GHGs','kg CO2e/2018 USD, purchaser price',0.029,0,0.029,?,4,3,1,5,1
+517110,Telecommunications,'carbon dioxide','kg/2018 USD, purchaser price',0.09,0,0.09,?,3,3,1,3,1
+517110,Telecommunications,methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+517110,Telecommunications,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+517110,Telecommunications,'other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+517210,'Wireless telecommunications','carbon dioxide','kg/2018 USD, purchaser price',0.122,0,0.122,?,3,3,1,3,1
+517210,'Wireless telecommunications',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+517210,'Wireless telecommunications','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+517210,'Wireless telecommunications','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+517A00,'Satellite, telecommunications resellers, and all other telecommunications','carbon dioxide','kg/2018 USD, purchaser price',0.12,0,0.12,?,3,3,1,3,1
+517A00,'Satellite, telecommunications resellers, and all other telecommunications',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+517A00,'Satellite, telecommunications resellers, and all other telecommunications','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+517A00,'Satellite, telecommunications resellers, and all other telecommunications','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,2,1
+518200,'Data processing and hosting','carbon dioxide','kg/2018 USD, purchaser price',0.145,0,0.145,?,3,3,1,3,1
+518200,'Data processing and hosting',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+518200,'Data processing and hosting','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+518200,'Data processing and hosting','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,4,3,1,4,1
+519130,'Internet publishing and broadcasting','carbon dioxide','kg/2018 USD, purchaser price',0.125,0,0.125,?,3,3,1,3,1
+519130,'Internet publishing and broadcasting',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+519130,'Internet publishing and broadcasting','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+519130,'Internet publishing and broadcasting','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+5191A0,'News syndicates, libraries, archives, Internet publishing and all other information services','carbon dioxide','kg/2018 USD, purchaser price',0.134,0,0.134,?,3,3,1,3,1
+5191A0,'News syndicates, libraries, archives, Internet publishing and all other information services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+5191A0,'News syndicates, libraries, archives, Internet publishing and all other information services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+5191A0,'News syndicates, libraries, archives, Internet publishing and all other information services','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+522A00,'Nondepository credit intermediation and related activities','carbon dioxide','kg/2018 USD, purchaser price',0.073,0,0.073,?,3,3,1,3,1
+522A00,'Nondepository credit intermediation and related activities',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+522A00,'Nondepository credit intermediation and related activities','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+522A00,'Nondepository credit intermediation and related activities','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+523900,'Investment advice, portfolio management, and other financial advising services','carbon dioxide','kg/2018 USD, purchaser price',0.099,0,0.099,?,3,3,1,3,1
+523900,'Investment advice, portfolio management, and other financial advising services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+523900,'Investment advice, portfolio management, and other financial advising services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+523900,'Investment advice, portfolio management, and other financial advising services','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+523A00,'Securities and commodities brokerage and exchanges','carbon dioxide','kg/2018 USD, purchaser price',0.075,0,0.075,?,3,3,1,3,1
+523A00,'Securities and commodities brokerage and exchanges',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+523A00,'Securities and commodities brokerage and exchanges','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+523A00,'Securities and commodities brokerage and exchanges','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+524113,'Direct life insurance carriers','carbon dioxide','kg/2018 USD, purchaser price',0.026,0,0.026,?,3,3,1,3,1
+524113,'Direct life insurance carriers',methane,'kg/2018 USD, purchaser price',0,0,0,?,2,3,1,1,1
+524113,'Direct life insurance carriers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+524113,'Direct life insurance carriers','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+5241XX,'Insurance carriers, except direct life','carbon dioxide','kg/2018 USD, purchaser price',0.041,0,0.041,?,3,3,1,3,1
+5241XX,'Insurance carriers, except direct life',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+5241XX,'Insurance carriers, except direct life','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+5241XX,'Insurance carriers, except direct life','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+524200,'Insurance agencies and brokerages','carbon dioxide','kg/2018 USD, purchaser price',0.036,0,0.036,?,3,3,1,3,1
+524200,'Insurance agencies and brokerages',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+524200,'Insurance agencies and brokerages','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+524200,'Insurance agencies and brokerages','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+525000,'Funds, trusts, and financial vehicles','carbon dioxide','kg/2018 USD, purchaser price',0.191,0,0.191,?,3,3,1,4,1
+525000,'Funds, trusts, and financial vehicles',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+525000,'Funds, trusts, and financial vehicles','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,2,1
+525000,'Funds, trusts, and financial vehicles','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+52A000,'Monetary authorities and depository credit intermediation','carbon dioxide','kg/2018 USD, purchaser price',0.077,0,0.077,?,3,3,1,3,1
+52A000,'Monetary authorities and depository credit intermediation',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+52A000,'Monetary authorities and depository credit intermediation','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+52A000,'Monetary authorities and depository credit intermediation','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+531HSO,'Owner-occupied housing','carbon dioxide','kg/2018 USD, purchaser price',0.025,0,0.025,?,3,3,1,3,1
+531HSO,'Owner-occupied housing',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+531HSO,'Owner-occupied housing','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+531HSO,'Owner-occupied housing','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,5,1
+531HST,'Tenant-occupied housing','carbon dioxide','kg/2018 USD, purchaser price',0.01,0,0.01,?,3,3,1,3,1
+531HST,'Tenant-occupied housing',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+531HST,'Tenant-occupied housing','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+531HST,'Tenant-occupied housing','other GHGs','kg CO2e/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+531ORE,'Other real estate','carbon dioxide','kg/2018 USD, purchaser price',0.468,0,0.468,?,3,3,1,3,1
+531ORE,'Other real estate',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+531ORE,'Other real estate','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+531ORE,'Other real estate','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+532100,'Vehicle rental and leasing','carbon dioxide','kg/2018 USD, purchaser price',0.169,0,0.169,?,3,3,1,4,1
+532100,'Vehicle rental and leasing',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,2,1
+532100,'Vehicle rental and leasing','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+532100,'Vehicle rental and leasing','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+532400,'Commercial equipment rental','carbon dioxide','kg/2018 USD, purchaser price',0.142,0,0.142,?,3,3,1,3,1
+532400,'Commercial equipment rental',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+532400,'Commercial equipment rental','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+532400,'Commercial equipment rental','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,4,3,1,4,1
+532A00,'Consumer goods and general rental centers','carbon dioxide','kg/2018 USD, purchaser price',0.148,0,0.148,?,3,3,1,3,1
+532A00,'Consumer goods and general rental centers',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+532A00,'Consumer goods and general rental centers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+532A00,'Consumer goods and general rental centers','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+533000,'Lessors of nonfinancial intangible assets','carbon dioxide','kg/2018 USD, purchaser price',0.064,0,0.064,?,3,3,1,3,1
+533000,'Lessors of nonfinancial intangible assets',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+533000,'Lessors of nonfinancial intangible assets','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+533000,'Lessors of nonfinancial intangible assets','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+541100,'Legal services','carbon dioxide','kg/2018 USD, purchaser price',0.074,0,0.074,?,3,3,1,3,1
+541100,'Legal services',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541100,'Legal services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541100,'Legal services','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+541200,'Accounting, tax preparation, bookkeeping, and payroll','carbon dioxide','kg/2018 USD, purchaser price',0.059,0,0.059,?,3,3,1,3,1
+541200,'Accounting, tax preparation, bookkeeping, and payroll',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541200,'Accounting, tax preparation, bookkeeping, and payroll','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541200,'Accounting, tax preparation, bookkeeping, and payroll','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+541300,'Architectural, engineering, and related services','carbon dioxide','kg/2018 USD, purchaser price',0.13,0,0.13,?,3,3,1,3,1
+541300,'Architectural, engineering, and related services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+541300,'Architectural, engineering, and related services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541300,'Architectural, engineering, and related services','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+541400,'Specialized design','carbon dioxide','kg/2018 USD, purchaser price',0.092,0,0.092,?,3,3,1,3,1
+541400,'Specialized design',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541400,'Specialized design','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541400,'Specialized design','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+541511,'Custom computer programming','carbon dioxide','kg/2018 USD, purchaser price',0.088,0,0.088,?,3,3,1,3,1
+541511,'Custom computer programming',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541511,'Custom computer programming','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+541511,'Custom computer programming','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+541512,'Computer systems design','carbon dioxide','kg/2018 USD, purchaser price',0.061,0,0.061,?,3,3,1,3,1
+541512,'Computer systems design',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541512,'Computer systems design','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541512,'Computer systems design','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,4,3,1,4,1
+54151A,'Other computer related services, including facilities management','carbon dioxide','kg/2018 USD, purchaser price',0.074,0,0.074,?,3,3,1,3,1
+54151A,'Other computer related services, including facilities management',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+54151A,'Other computer related services, including facilities management','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+54151A,'Other computer related services, including facilities management','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+541610,'Management consulting','carbon dioxide','kg/2018 USD, purchaser price',0.075,0,0.075,?,3,3,1,3,1
+541610,'Management consulting',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541610,'Management consulting','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541610,'Management consulting','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,4,3,1,4,1
+5416A0,'Environmental and other technical consulting services','carbon dioxide','kg/2018 USD, purchaser price',0.073,0,0.073,?,3,3,1,3,1
+5416A0,'Environmental and other technical consulting services',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+5416A0,'Environmental and other technical consulting services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+5416A0,'Environmental and other technical consulting services','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+541700,'Scientific research and development','carbon dioxide','kg/2018 USD, purchaser price',0.171,0,0.171,?,3,3,1,3,1
+541700,'Scientific research and development',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+541700,'Scientific research and development','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+541700,'Scientific research and development','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+541800,'Advertising and public relations','carbon dioxide','kg/2018 USD, purchaser price',0.119,0,0.119,?,3,3,1,3,1
+541800,'Advertising and public relations',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541800,'Advertising and public relations','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541800,'Advertising and public relations','other GHGs','kg CO2e/2018 USD, purchaser price',0.006,0,0.006,?,3,3,1,4,1
+541920,Photographers,'carbon dioxide','kg/2018 USD, purchaser price',0.118,0,0.118,?,3,3,1,3,1
+541920,Photographers,methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+541920,Photographers,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+541920,Photographers,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+541940,Veterinarians,'carbon dioxide','kg/2018 USD, purchaser price',0.108,0,0.108,?,3,3,1,3,1
+541940,Veterinarians,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+541940,Veterinarians,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+541940,Veterinarians,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,2,1
+5419A0,'Marketing research and all other miscellaneous professional, scientific, and technical services','carbon dioxide','kg/2018 USD, purchaser price',0.086,0,0.086,?,3,3,1,3,1
+5419A0,'Marketing research and all other miscellaneous professional, scientific, and technical services',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+5419A0,'Marketing research and all other miscellaneous professional, scientific, and technical services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+5419A0,'Marketing research and all other miscellaneous professional, scientific, and technical services','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+550000,'Company and enterprise management','carbon dioxide','kg/2018 USD, purchaser price',0.135,0,0.135,?,2,3,1,3,1
+550000,'Company and enterprise management',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+550000,'Company and enterprise management','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+550000,'Company and enterprise management','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+561100,'Office administration','carbon dioxide','kg/2018 USD, purchaser price',0.093,0,0.093,?,3,3,1,3,1
+561100,'Office administration',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+561100,'Office administration','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+561100,'Office administration','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+561200,'Facilities support','carbon dioxide','kg/2018 USD, purchaser price',0.237,0,0.237,?,3,3,1,3,1
+561200,'Facilities support',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+561200,'Facilities support','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,2,1
+561200,'Facilities support','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+561300,'Employment services','carbon dioxide','kg/2018 USD, purchaser price',0.038,0,0.038,?,3,3,1,3,1
+561300,'Employment services',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+561300,'Employment services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+561300,'Employment services','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+561400,'Business support','carbon dioxide','kg/2018 USD, purchaser price',0.125,0,0.125,?,3,3,1,3,1
+561400,'Business support',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+561400,'Business support','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+561400,'Business support','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+561500,'Travel arrangement and reservation','carbon dioxide','kg/2018 USD, purchaser price',0.102,0,0.102,?,3,3,1,3,1
+561500,'Travel arrangement and reservation',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+561500,'Travel arrangement and reservation','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+561500,'Travel arrangement and reservation','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,4,3,1,4,1
+561600,'Investigation and security','carbon dioxide','kg/2018 USD, purchaser price',0.1,0,0.1,?,3,3,1,3,1
+561600,'Investigation and security',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+561600,'Investigation and security','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+561600,'Investigation and security','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+561700,'Buildings and dwellings services','carbon dioxide','kg/2018 USD, purchaser price',0.162,0,0.162,?,3,3,1,3,1
+561700,'Buildings and dwellings services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+561700,'Buildings and dwellings services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+561700,'Buildings and dwellings services','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,4,3,1,4,1
+561900,'Other support services','carbon dioxide','kg/2018 USD, purchaser price',0.147,0,0.147,?,3,3,1,3,1
+561900,'Other support services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+561900,'Other support services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+561900,'Other support services','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,4,1
+562000,'Waste management and remediation','carbon dioxide','kg/2018 USD, purchaser price',0.336,0,0.336,?,3,3,1,2,1
+562000,'Waste management and remediation',methane,'kg/2018 USD, purchaser price',0.053,0,0.053,?,2,3,1,1,1
+562000,'Waste management and remediation','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+562000,'Waste management and remediation','other GHGs','kg CO2e/2018 USD, purchaser price',0.013,0,0.013,?,4,3,1,4,1
+611100,'Elementary and secondary schools','carbon dioxide','kg/2018 USD, purchaser price',0.156,0,0.156,?,3,3,1,4,1
+611100,'Elementary and secondary schools',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+611100,'Elementary and secondary schools','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+611100,'Elementary and secondary schools','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+611A00,'Colleges, universities, junior colleges, and professional schools','carbon dioxide','kg/2018 USD, purchaser price',0.189,0,0.189,?,3,3,1,3,1
+611A00,'Colleges, universities, junior colleges, and professional schools',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,4,3,1,1,1
+611A00,'Colleges, universities, junior colleges, and professional schools','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+611A00,'Colleges, universities, junior colleges, and professional schools','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,4,1
+611B00,'Other educational services','carbon dioxide','kg/2018 USD, purchaser price',0.138,0,0.138,?,3,3,1,3,1
+611B00,'Other educational services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+611B00,'Other educational services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+611B00,'Other educational services','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+621100,Physicians,'carbon dioxide','kg/2018 USD, purchaser price',0.081,0,0.081,?,3,3,1,3,1
+621100,Physicians,methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+621100,Physicians,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+621100,Physicians,'other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,4,1
+621200,Dentists,'carbon dioxide','kg/2018 USD, purchaser price',0.107,0,0.107,?,3,3,1,3,1
+621200,Dentists,methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+621200,Dentists,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+621200,Dentists,'other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+621300,'Healthcare practitioners (except physicians and dentists)','carbon dioxide','kg/2018 USD, purchaser price',0.111,0,0.111,?,3,3,1,3,1
+621300,'Healthcare practitioners (except physicians and dentists)',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+621300,'Healthcare practitioners (except physicians and dentists)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+621300,'Healthcare practitioners (except physicians and dentists)','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,2,3,1,2,1
+621400,'Outpatient healthcare','carbon dioxide','kg/2018 USD, purchaser price',0.133,0,0.133,?,3,3,1,3,1
+621400,'Outpatient healthcare',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+621400,'Outpatient healthcare','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+621400,'Outpatient healthcare','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,4,1
+621500,'Medical laboratories','carbon dioxide','kg/2018 USD, purchaser price',0.099,0,0.099,?,3,3,1,3,1
+621500,'Medical laboratories',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+621500,'Medical laboratories','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,2,1
+621500,'Medical laboratories','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,2,1
+621600,'Home healthcare','carbon dioxide','kg/2018 USD, purchaser price',0.111,0,0.111,?,3,3,1,3,1
+621600,'Home healthcare',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+621600,'Home healthcare','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+621600,'Home healthcare','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+621900,Ambulances,'carbon dioxide','kg/2018 USD, purchaser price',0.171,0,0.171,?,3,3,1,3,1
+621900,Ambulances,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+621900,Ambulances,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+621900,Ambulances,'other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,3,3,1,3,1
+622000,Hospitals,'carbon dioxide','kg/2018 USD, purchaser price',0.161,0,0.161,?,3,3,1,3,1
+622000,Hospitals,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+622000,Hospitals,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+622000,Hospitals,'other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,3,1
+623A00,'Nursing and community care facilities','carbon dioxide','kg/2018 USD, purchaser price',0.164,0,0.164,?,3,3,1,3,1
+623A00,'Nursing and community care facilities',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+623A00,'Nursing and community care facilities','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+623A00,'Nursing and community care facilities','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,4,1
+623B00,'Residential mental retardation, mental health, substance abuse and other facilities','carbon dioxide','kg/2018 USD, purchaser price',0.16,0,0.16,?,3,3,1,3,1
+623B00,'Residential mental retardation, mental health, substance abuse and other facilities',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+623B00,'Residential mental retardation, mental health, substance abuse and other facilities','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+623B00,'Residential mental retardation, mental health, substance abuse and other facilities','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,4,3,1,4,1
+624100,'Individual and family services','carbon dioxide','kg/2018 USD, purchaser price',0.156,0,0.156,?,3,3,1,3,1
+624100,'Individual and family services',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+624100,'Individual and family services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+624100,'Individual and family services','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,4,3,1,4,1
+624400,'Child day care','carbon dioxide','kg/2018 USD, purchaser price',0.178,0,0.178,?,3,3,1,3,1
+624400,'Child day care',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+624400,'Child day care','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+624400,'Child day care','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,4,3,1,4,1
+624A00,'Community food, housing, and other relief services, including rehabilitation services','carbon dioxide','kg/2018 USD, purchaser price',0.237,0,0.237,?,3,3,1,3,1
+624A00,'Community food, housing, and other relief services, including rehabilitation services',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,1,1
+624A00,'Community food, housing, and other relief services, including rehabilitation services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,4,1
+624A00,'Community food, housing, and other relief services, including rehabilitation services','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,4,3,1,4,1
+711100,Performances,'carbon dioxide','kg/2018 USD, purchaser price',0.1,0,0.1,?,3,3,1,3,1
+711100,Performances,methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+711100,Performances,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+711100,Performances,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+711200,Sports,'carbon dioxide','kg/2018 USD, purchaser price',0.08,0,0.08,?,3,3,1,3,1
+711200,Sports,methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+711200,Sports,'nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+711200,Sports,'other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,4,1
+711500,'Independent artists, writers, and performers','carbon dioxide','kg/2018 USD, purchaser price',0.016,0,0.016,?,3,3,1,3,1
+711500,'Independent artists, writers, and performers',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+711500,'Independent artists, writers, and performers','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+711500,'Independent artists, writers, and performers','other GHGs','kg CO2e/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+711A00,'Promoters and agents','carbon dioxide','kg/2018 USD, purchaser price',0.096,0,0.096,?,3,3,1,3,1
+711A00,'Promoters and agents',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+711A00,'Promoters and agents','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+711A00,'Promoters and agents','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,4,1
+712000,'Museums, historical sites, zoos, and parks','carbon dioxide','kg/2018 USD, purchaser price',0.203,0,0.203,?,3,3,1,3,1
+712000,'Museums, historical sites, zoos, and parks',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+712000,'Museums, historical sites, zoos, and parks','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+712000,'Museums, historical sites, zoos, and parks','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,4,1
+713100,'Amusement parks and arcades','carbon dioxide','kg/2018 USD, purchaser price',0.158,0,0.158,?,3,3,1,3,1
+713100,'Amusement parks and arcades',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+713100,'Amusement parks and arcades','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+713100,'Amusement parks and arcades','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+713200,'Gambling establishments (except casino hotels)','carbon dioxide','kg/2018 USD, purchaser price',0.223,0,0.223,?,3,3,1,3,1
+713200,'Gambling establishments (except casino hotels)',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+713200,'Gambling establishments (except casino hotels)','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+713200,'Gambling establishments (except casino hotels)','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,4,3,1,4,1
+713900,'Golf courses, marinas, ski resorts, fitness and other rec centers and industries','carbon dioxide','kg/2018 USD, purchaser price',0.291,0,0.291,?,3,3,1,3,1
+713900,'Golf courses, marinas, ski resorts, fitness and other rec centers and industries',methane,'kg/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,1,1
+713900,'Golf courses, marinas, ski resorts, fitness and other rec centers and industries','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+713900,'Golf courses, marinas, ski resorts, fitness and other rec centers and industries','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+721000,'Hotels and campgrounds','carbon dioxide','kg/2018 USD, purchaser price',0.205,0,0.205,?,3,3,1,3,1
+721000,'Hotels and campgrounds',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+721000,'Hotels and campgrounds','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+721000,'Hotels and campgrounds','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+722110,'Full-service restaurants','carbon dioxide','kg/2018 USD, purchaser price',0.244,0,0.244,?,3,3,1,3,1
+722110,'Full-service restaurants',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+722110,'Full-service restaurants','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+722110,'Full-service restaurants','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,4,1
+722211,'Limited-service restaurants','carbon dioxide','kg/2018 USD, purchaser price',0.343,0,0.343,?,3,3,1,3,1
+722211,'Limited-service restaurants',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+722211,'Limited-service restaurants','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+722211,'Limited-service restaurants','other GHGs','kg CO2e/2018 USD, purchaser price',0.008,0,0.008,?,4,3,1,4,1
+722A00,'All other food and drinking places','carbon dioxide','kg/2018 USD, purchaser price',0.173,0,0.173,?,3,3,1,3,1
+722A00,'All other food and drinking places',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+722A00,'All other food and drinking places','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+722A00,'All other food and drinking places','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,4,3,1,4,1
+811100,'Vehicle repair','carbon dioxide','kg/2018 USD, purchaser price',0.154,0,0.154,?,3,3,1,3,1
+811100,'Vehicle repair',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+811100,'Vehicle repair','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+811100,'Vehicle repair','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,3,1
+811200,'Electronic  equipment repair and maintenance','carbon dioxide','kg/2018 USD, purchaser price',0.107,0,0.107,?,3,3,1,3,1
+811200,'Electronic  equipment repair and maintenance',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+811200,'Electronic  equipment repair and maintenance','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+811200,'Electronic  equipment repair and maintenance','other GHGs','kg CO2e/2018 USD, purchaser price',0.005,0,0.005,?,3,3,1,2,1
+811300,'Commercial machinery repair','carbon dioxide','kg/2018 USD, purchaser price',0.137,0,0.137,?,3,3,1,3,1
+811300,'Commercial machinery repair',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+811300,'Commercial machinery repair','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+811300,'Commercial machinery repair','other GHGs','kg CO2e/2018 USD, purchaser price',0.018,0,0.018,?,4,3,1,5,1
+811400,'Household goods repair','carbon dioxide','kg/2018 USD, purchaser price',0.112,0,0.112,?,3,3,1,3,1
+811400,'Household goods repair',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+811400,'Household goods repair','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+811400,'Household goods repair','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+812100,'Salons and barber shops','carbon dioxide','kg/2018 USD, purchaser price',0.141,0,0.141,?,3,3,1,3,1
+812100,'Salons and barber shops',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+812100,'Salons and barber shops','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+812100,'Salons and barber shops','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+812200,'Funerary services','carbon dioxide','kg/2018 USD, purchaser price',0.039,0,0.039,?,3,3,1,3,1
+812200,'Funerary services',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,1,1
+812200,'Funerary services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+812200,'Funerary services','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,3,1
+812300,'Dry-cleaning and laundry','carbon dioxide','kg/2018 USD, purchaser price',0.193,0,0.193,?,3,3,1,3,1
+812300,'Dry-cleaning and laundry',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+812300,'Dry-cleaning and laundry','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+812300,'Dry-cleaning and laundry','other GHGs','kg CO2e/2018 USD, purchaser price',0.003,0,0.003,?,3,3,1,3,1
+812900,'Pet care, photofinishing, parking and other sundry services','carbon dioxide','kg/2018 USD, purchaser price',0.126,0,0.126,?,3,3,1,3,1
+812900,'Pet care, photofinishing, parking and other sundry services',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+812900,'Pet care, photofinishing, parking and other sundry services','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+812900,'Pet care, photofinishing, parking and other sundry services','other GHGs','kg CO2e/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,3,1
+813100,'Religious organizations','carbon dioxide','kg/2018 USD, purchaser price',0.251,0,0.251,?,3,3,1,3,1
+813100,'Religious organizations',methane,'kg/2018 USD, purchaser price',0.002,0,0.002,?,3,3,1,1,1
+813100,'Religious organizations','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+813100,'Religious organizations','other GHGs','kg CO2e/2018 USD, purchaser price',0.004,0,0.004,?,3,3,1,4,1
+813A00,'Grantmaking, giving, and social advocacy organizations','carbon dioxide','kg/2018 USD, purchaser price',0.083,0,0.083,?,3,3,1,3,1
+813A00,'Grantmaking, giving, and social advocacy organizations',methane,'kg/2018 USD, purchaser price',0,0,0,?,3,3,1,1,1
+813A00,'Grantmaking, giving, and social advocacy organizations','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,3,3,1,3,1
+813A00,'Grantmaking, giving, and social advocacy organizations','other GHGs','kg CO2e/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,3,1
+813B00,'Civic, social, professional, and similar organizations','carbon dioxide','kg/2018 USD, purchaser price',0.147,0,0.147,?,3,3,1,3,1
+813B00,'Civic, social, professional, and similar organizations',methane,'kg/2018 USD, purchaser price',0.001,0,0.001,?,3,3,1,1,1
+813B00,'Civic, social, professional, and similar organizations','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,3,1
+813B00,'Civic, social, professional, and similar organizations','other GHGs','kg CO2e/2018 USD, purchaser price',0.007,0,0.007,?,4,3,1,4,1
+814000,'Household employees','carbon dioxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+814000,'Household employees',methane,'kg/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+814000,'Household employees','nitrous oxide','kg/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
+814000,'Household employees','other GHGs','kg CO2e/2018 USD, purchaser price',0,0,0,?,4,3,1,5,1
